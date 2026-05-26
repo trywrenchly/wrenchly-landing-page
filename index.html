@@ -244,6 +244,206 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 
+/* EARLY ACCESS */
+.early-access {
+  background: var(--black);
+  padding: 120px 6%;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+}
+.ea-glow-l {
+  position: absolute;
+  top: 50%; left: -150px;
+  transform: translateY(-50%);
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+.ea-glow-r {
+  position: absolute;
+  top: 50%; right: -150px;
+  transform: translateY(-50%);
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+.ea-inner {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.ea-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--blue-dim);
+  border: 1px solid var(--blue-line);
+  color: var(--blue-b);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+.ea-badge-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--blue-b);
+  animation: blink 2s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+.ea-inner h2 {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.ea-inner h2 .blue { color: var(--blue-b); }
+.ea-sub {
+  font-size: 17px;
+  color: var(--grey);
+  line-height: 1.7;
+  margin-bottom: 48px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ea-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+.ea-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.ea-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ea-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--grey);
+  letter-spacing: 0.04em;
+}
+.ea-field input,
+.ea-field textarea {
+  background: var(--navy);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r);
+  padding: 13px 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+  -webkit-appearance: none;
+}
+.ea-field input::placeholder,
+.ea-field textarea::placeholder {
+  color: var(--grey-d);
+}
+.ea-field input:focus,
+.ea-field textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+.ea-field textarea {
+  resize: none;
+  height: 100px;
+  line-height: 1.6;
+}
+.ea-submit {
+  width: 100%;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: var(--r);
+  padding: 15px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.ea-submit:hover:not(:disabled) {
+  background: var(--blue-b);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(37,99,235,0.3);
+}
+.ea-submit:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+.ea-submit .btn-text { transition: opacity 0.2s; }
+.ea-submit .btn-loading { display: none; align-items: center; gap: 8px; }
+.ea-submit.loading .btn-text { display: none; }
+.ea-submit.loading .btn-loading { display: flex; }
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.ea-success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 32px;
+  background: rgba(34,197,94,0.06);
+  border: 1px solid rgba(34,197,94,0.2);
+  border-radius: var(--rl);
+  text-align: center;
+}
+.ea-success-icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: rgba(34,197,94,0.12);
+  border: 1px solid rgba(34,197,94,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.ea-success h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.3px;
+}
+.ea-success p { font-size: 15px; color: var(--grey); line-height: 1.6; }
+.ea-note {
+  text-align: center;
+  font-size: 12px;
+  color: var(--grey-d);
+  margin-top: 16px;
+}
+
+@media (max-width: 600px) {
+  .ea-row { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 900px) {
   .roi-inner { grid-template-columns: 1fr; }
 }
@@ -275,7 +475,7 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
     <li><a href="#how">How it works</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#cta" class="nav-btn">Book a Demo</a></li>
+    <li><a href="https://calendly.com/trywrenchly/30min" target="_blank" class="nav-btn">Book a Demo</a></li>
   </ul>
 </nav>
 
@@ -289,7 +489,7 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
     <h1>Never Miss a<br><span class="blue">Job Again.</span></h1>
     <p class="hero-sub">Wrenchly answers calls, books jobs, follows up with customers, and helps electricians, plumbers, and HVAC companies convert more leads — automatically.</p>
     <div class="hero-actions">
-      <a href="#cta" class="btn-blue">
+      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue">
         Book a Demo
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
@@ -341,19 +541,6 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
     </div>
   </div>
 </section>
-
-<!-- STRIP -->
-<div class="strip">
-  <span class="strip-label">Serving trades across Canada</span>
-  <div class="strip-items">
-    <span class="strip-item">Toronto, ON</span>
-    <span class="strip-item">Ottawa, ON</span>
-    <span class="strip-item">Mississauga, ON</span>
-    <span class="strip-item">Edmonton, AB</span>
-    <span class="strip-item">Winnipeg, MB</span>
-    <span class="strip-item">Hamilton, ON</span>
-  </div>
-</div>
 
 <!-- PROBLEM -->
 <section class="problem" id="problem">
@@ -638,7 +825,7 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
         <li><span class="tick">✓</span> Revenue dashboard</li>
         <li><span class="tick">✓</span> Priority support + monthly call</li>
       </ul>
-      <a href="#cta" class="pbtn pbtn-white">Book a Demo</a>
+      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-white">Book a Demo</a>
     </div>
     <div class="pcard">
       <div class="tier">Scale</div>
@@ -716,17 +903,254 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
   </div>
 </div>
 
+<!-- EARLY ACCESS -->
+<section class="early-access" id="early-access">
+  <div class="ea-glow-l"></div>
+  <div class="ea-glow-r"></div>
+  <div class="ea-inner">
+    <div class="ea-badge"><span class="ea-badge-dot"></span> Limited Early Access</div>
+    <h2>Your office should<br><span class="blue">run itself.</span></h2>
+    <p class="ea-sub">Join the early access list for Wrenchly — the modern operating system for trades businesses. We're onboarding a limited number of businesses first.</p>
+
+    <div id="ea-form-wrap">
+      <form class="ea-form" id="ea-form">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE">
+        <input type="hidden" name="subject" value="New Wrenchly Early Access Application">
+        <input type="hidden" name="from_name" value="Wrenchly Early Access">
+        <input type="checkbox" name="botcheck" style="display:none;">
+
+        <div class="ea-row">
+          <div class="ea-field">
+            <label for="ea-name">Full name</label>
+            <input type="text" id="ea-name" name="name" placeholder="Mike Reeves" required>
+          </div>
+          <div class="ea-field">
+            <label for="ea-company">Company name</label>
+            <input type="text" id="ea-company" name="company" placeholder="Reeves Plumbing" required>
+          </div>
+        </div>
+
+        <div class="ea-field">
+          <label for="ea-email">Email address</label>
+          <input type="email" id="ea-email" name="email" placeholder="mike@reevesplumbing.com" required>
+        </div>
+
+        <div class="ea-field">
+          <label for="ea-challenge">What's your biggest operational challenge right now?</label>
+          <textarea id="ea-challenge" name="challenge" placeholder="e.g. Missed calls while on the job, scheduling chaos, no time for follow-ups..." required></textarea>
+        </div>
+
+        <button type="submit" class="ea-submit" id="ea-submit">
+          <span class="btn-text">
+            Apply for Early Access
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </span>
+          <span class="btn-loading">
+            <span class="spinner"></span>
+            Submitting...
+          </span>
+        </button>
+      </form>
+      <p class="ea-note">No credit card required. We'll reach out within 24 hours.</p>
+    </div>
+
+    <div class="ea-success" id="ea-success">
+      <div class="ea-success-icon">✓</div>
+      <h3>You're on the list.</h3>
+      <p>Thanks for applying — we'll be reaching out soon to get you set up.</p>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta" id="cta">
   <p class="label" style="display:flex;justify-content:center;">Ready to grow?</p>
   <h2>Stop Missing Jobs.<br><span class="blue">Start Running on Autopilot.</span></h2>
   <p>Book a free 30-minute demo. We'll show you exactly how Wrenchly works for your business — no pressure, no jargon.</p>
   <div class="cta-actions">
-    <a href="https://trywrenchly.com" class="btn-blue">
+    <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue">
       Book a Demo
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
-    <a href="#demo" class="btn-outline">Watch How It Works</a>
+    <a href="#early-access" class="btn-outline">Apply for Early Access</a>
+  </div>
+</section>
+
+<script>
+document.getElementById('ea-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('ea-submit');
+  const form = document.getElementById('ea-form');
+  const successEl = document.getElementById('ea-success');
+  const formWrap = document.getElementById('ea-form-wrap');
+
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  const formData = new FormData(form);
+  const object = {};
+  formData.forEach((v, k) => object[k] = v);
+  const json = JSON.stringify(object);
+
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: json
+    });
+    const data = await res.json();
+    if (data.success) {
+      form.style.display = 'none';
+      document.querySelector('.ea-note').style.display = 'none';
+      successEl.style.display = 'flex';
+      successEl.style.animation = 'fadeUp 0.5s ease both';
+    } else {
+      throw new Error('Submission failed');
+    }
+  } catch (err) {
+    btn.classList.remove('loading');
+    btn.disabled = false;
+    btn.querySelector('.btn-text').innerHTML = 'Something went wrong — try again <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>';
+  }
+});
+</script>
+
+<!-- PRIVACY POLICY (hidden section, shown via anchor) -->
+<section id="privacy" style="display:none;background:var(--navy);padding:80px 6%;">
+  <div style="max-width:780px;margin:0 auto;">
+    <a href="#" onclick="document.getElementById('privacy').style.display='none';window.scrollTo(0,0);return false;" style="display:inline-flex;align-items:center;gap:8px;color:var(--blue-b);font-size:14px;font-weight:600;text-decoration:none;margin-bottom:40px;">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+      Back to site
+    </a>
+    <p style="font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);margin-bottom:12px;">Legal</p>
+    <h2 style="font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-1px;margin-bottom:8px;">Privacy Policy</h2>
+    <p style="font-size:14px;color:var(--grey);margin-bottom:48px;">Last updated: May 2025</p>
+
+    <div style="display:flex;flex-direction:column;gap:36px;font-size:15px;line-height:1.8;color:var(--grey);">
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">1. Who We Are</h3>
+        <p>Wrenchly ("we", "us", or "our") is a sole proprietorship registered in Ontario, Canada, operating under the trade name Wrenchly and accessible at trywrenchly.com. We provide AI-powered automation services for field service businesses including plumbers, electricians, and HVAC companies.</p>
+        <p style="margin-top:12px;">For privacy-related inquiries, contact us at:<br>
+        <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a><br>
+        2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2, Canada</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">2. Scope &amp; Applicable Law</h3>
+        <p>This Privacy Policy governs how Wrenchly collects, uses, discloses, and protects personal information in accordance with Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and, where applicable, Ontario's privacy legislation. By using our website or services, you consent to the practices described in this policy.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">3. Information We Collect</h3>
+        <p>We may collect the following categories of personal information:</p>
+        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
+          <li><strong style="color:var(--white);">Identity &amp; contact information</strong> — full name, business name, email address, phone number</li>
+          <li><strong style="color:var(--white);">Business information</strong> — trade type, service area, number of employees, current tools and systems in use</li>
+          <li><strong style="color:var(--white);">Payment information</strong> — billing details processed securely through third-party payment processors; we do not store full card numbers</li>
+          <li><strong style="color:var(--white);">Communication records</strong> — emails, demo call notes, and support interactions</li>
+          <li><strong style="color:var(--white);">Usage data</strong> — pages visited, time on site, browser type, IP address, and referral source collected via standard web analytics</li>
+          <li><strong style="color:var(--white);">End-customer data</strong> — when providing our service, we may process personal information belonging to your customers (names, phone numbers, booking details) on your behalf as a data processor</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">4. How We Collect Information</h3>
+        <p>We collect personal information through:</p>
+        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
+          <li>Demo booking forms and contact forms on this website</li>
+          <li>Direct communication by email, phone, or video call</li>
+          <li>Onboarding and account setup processes</li>
+          <li>Third-party tools including scheduling platforms (e.g. Calendly), CRM systems (e.g. GoHighLevel), and payment processors</li>
+          <li>Automatically via cookies and standard web analytics when you visit trywrenchly.com</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">5. How We Use Your Information</h3>
+        <p>We use collected information to:</p>
+        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
+          <li>Respond to demo requests and enquiries</li>
+          <li>Deliver and manage our AI automation services</li>
+          <li>Process payments and issue invoices</li>
+          <li>Send service-related communications including booking confirmations and account updates</li>
+          <li>Send marketing communications (email and/or SMS) where you have provided express or implied consent under Canada's Anti-Spam Legislation (CASL)</li>
+          <li>Improve our website and services through anonymised analytics</li>
+          <li>Comply with applicable legal obligations</li>
+        </ul>
+        <p style="margin-top:12px;">We do not sell, rent, or trade your personal information to third parties for their own marketing purposes.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">6. Marketing Communications (CASL)</h3>
+        <p>We comply with Canada's Anti-Spam Legislation (CASL). We will only send commercial electronic messages (email or SMS) where we have your express or implied consent. Every marketing message will include a clear and easy way to unsubscribe. You may withdraw consent at any time by clicking "unsubscribe" in any email or replying STOP to any SMS, or by contacting us directly at <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a>.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">7. Sharing Your Information</h3>
+        <p>We may share personal information with trusted third-party service providers who assist us in operating our business, including:</p>
+        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
+          <li>Scheduling and CRM platforms (e.g. Calendly, GoHighLevel)</li>
+          <li>Payment processors (e.g. Stripe)</li>
+          <li>AI voice and communication platforms used to deliver our service</li>
+          <li>Email and SMS communication providers</li>
+          <li>Website hosting and analytics providers</li>
+        </ul>
+        <p style="margin-top:12px;">All third-party providers are required to handle your information securely and only for the purposes we specify. Some providers may be located outside Canada, including in the United States. By using our services, you acknowledge that your information may be transferred to and processed in other jurisdictions, where local laws may differ from those in Canada.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">8. Data Retention</h3>
+        <p>We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, or as required by law. Client records are generally retained for a minimum of 7 years for tax and accounting purposes. You may request deletion of your data at any time subject to these legal retention requirements.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">9. Your Rights Under PIPEDA</h3>
+        <p>You have the right to:</p>
+        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
+          <li>Request access to the personal information we hold about you</li>
+          <li>Request correction of inaccurate or incomplete information</li>
+          <li>Withdraw consent for non-essential data uses at any time</li>
+          <li>Request deletion of your personal information, subject to legal obligations</li>
+          <li>File a complaint with the Office of the Privacy Commissioner of Canada (OPC) at <a href="https://www.priv.gc.ca" target="_blank" style="color:var(--blue-b);text-decoration:none;">priv.gc.ca</a></li>
+        </ul>
+        <p style="margin-top:12px;">To exercise any of these rights, contact us at <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a>. We will respond within 30 days.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">10. Cookies &amp; Tracking</h3>
+        <p>Our website uses cookies and similar tracking technologies to understand how visitors use the site and to improve user experience. These include essential cookies required for the site to function and analytics cookies that collect anonymised usage data. You may disable cookies through your browser settings, though this may affect certain functionality.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">11. Security</h3>
+        <p>We implement reasonable technical and organisational measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. However, no method of transmission over the internet is 100% secure. We encourage you to contact us immediately if you suspect any unauthorised use of your information.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">12. Children's Privacy</h3>
+        <p>Our services are intended for business owners and are not directed at individuals under the age of 18. We do not knowingly collect personal information from minors.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">13. Changes to This Policy</h3>
+        <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of our website or services after any changes constitutes your acceptance of the updated policy.</p>
+      </div>
+
+      <div>
+        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">14. Contact Us</h3>
+        <p>For any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact:</p>
+        <div style="margin-top:16px;padding:20px 24px;background:var(--navy-2);border:1px solid var(--border);border-radius:var(--r);line-height:2;">
+          <strong style="color:var(--white);">Wrenchly</strong><br>
+          2 Bloor Street West, Suite 700<br>
+          Toronto, Ontario, M4W 3E2, Canada<br>
+          <a href="mailto:hello@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">hello@trywrenchly.com</a><br>
+          <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a> (privacy requests)<br>
+          <a href="https://trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">trywrenchly.com</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -745,6 +1169,7 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
+      <a href="#privacy" onclick="document.getElementById('privacy').style.display='block';window.scrollTo(0,document.getElementById('privacy').offsetTop);return false;">Privacy Policy</a>
       <a href="#faq">FAQ</a>
       <a href="https://trywrenchly.com">trywrenchly.com</a>
     </div>
@@ -755,7 +1180,11 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
       @trywrenchly
     </a>
-    <p>trywrenchly.com</p>
+    <p style="color:var(--grey-d);font-size:13px;">
+      <a href="mailto:hello@trywrenchly.com" style="color:var(--grey-d);text-decoration:none;">hello@trywrenchly.com</a>
+      &nbsp;·&nbsp;
+      2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2, Canada
+    </p>
   </div>
 </footer>
 
