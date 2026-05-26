@@ -211,6 +211,85 @@ h2 { font-size: clamp(30px, 4vw, 50px); font-weight: 800; letter-spacing: -1.5px
 .pbtn-white:hover { background: var(--off-white); }
 .pricing-note { text-align: center; margin-top: 24px; font-size: 13px; color: var(--grey); }
 
+/* FOUNDER PRICING */
+.founder-bar {
+  margin: 32px 0 40px;
+}
+.founder-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(37,99,235,0.08);
+  border: 1px solid var(--blue-line);
+  border-radius: 100px;
+  padding: 10px 20px;
+  max-width: 540px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.founder-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--blue-b);
+  animation: blink 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+.founder-text {
+  font-size: 13px;
+  color: var(--off-white);
+}
+.founder-track {
+  width: 100px;
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 100px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.founder-fill {
+  height: 100%;
+  background: var(--blue);
+  border-radius: 100px;
+}
+.founder-pct {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue-b);
+  white-space: nowrap;
+}
+.price-old {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--grey-d);
+  text-decoration: line-through;
+  margin-bottom: 2px;
+}
+.price-old span { font-size: 14px; }
+.founder-price {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.founder-save {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(34,197,94,0.08);
+  border: 1px solid rgba(34,197,94,0.2);
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+}
+.founder-tick { background: rgba(34,197,94,0.1) !important; border-color: rgba(34,197,94,0.25) !important; color: var(--green) !important; }
+.founder-perk { color: var(--green) !important; font-weight: 600; }
+
 /* FAQ */
 .faq { background: var(--black); }
 .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 48px; }
@@ -790,15 +869,30 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 
 <!-- PRICING -->
 <section class="pricing" id="pricing">
-  <p class="label">Pricing</p>
-  <h2>Simple Monthly Pricing.<br><span class="blue">No surprises.</span></h2>
-  <p class="sub">Month-to-month. No long contracts. Setup is done for you.</p>
+  <p class="label">Founder Pricing</p>
+  <h2>Early Access.<br><span class="blue">Half price. Forever.</span></h2>
+  <p class="sub">First 20 businesses get locked in at founder rates — permanently, for as long as you stay. After that, regular pricing applies.</p>
+
+  <div class="founder-bar">
+    <div class="founder-bar-inner">
+      <div class="founder-dot"></div>
+      <span class="founder-text">🔒 Founder pricing — <strong>14 of 20 spots remaining</strong></span>
+      <div class="founder-track">
+        <div class="founder-fill" style="width:30%"></div>
+      </div>
+      <span class="founder-pct">6 spots left</span>
+    </div>
+  </div>
+
   <div class="pgrid">
+
     <div class="pcard">
       <div class="tier">Starter</div>
-      <div class="price">$299</div>
-      <div class="price-range">/ month + one-time setup</div>
-      <div class="price-desc">For sole traders just getting started with automation.</div>
+      <div class="price-old">$299<span>/mo</span></div>
+      <div class="price founder-price">$149</div>
+      <div class="price-range">/ month · founder rate · locked in forever</div>
+      <div class="founder-save">You save $150/mo · $1,800/yr</div>
+      <div class="price-desc">For sole traders just getting started with automation. Setup fee waived.</div>
       <ul class="flist">
         <li><span class="tick">✓</span> AI chatbot on your website</li>
         <li><span class="tick">✓</span> Online booking calendar</li>
@@ -806,15 +900,19 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
         <li><span class="tick">✓</span> Missed call text-back</li>
         <li><span class="tick">✓</span> Google review automation</li>
         <li><span class="tick">✓</span> Email support</li>
+        <li><span class="tick founder-tick">✓</span> <span class="founder-perk">Setup fee waived (saves $497)</span></li>
       </ul>
-      <a href="#cta" class="pbtn pbtn-ghost">Get started</a>
+      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-ghost">Claim Founder Spot</a>
     </div>
+
     <div class="pcard featured">
       <div class="popular-badge">Most popular</div>
       <div class="tier">Professional</div>
-      <div class="price">$599</div>
-      <div class="price-range">/ month + one-time setup</div>
-      <div class="price-desc">For growing operations ready to run on near-full automation.</div>
+      <div class="price-old" style="color:rgba(255,255,255,0.4)">$599<span>/mo</span></div>
+      <div class="price founder-price">$299</div>
+      <div class="price-range">/ month · founder rate · locked in forever</div>
+      <div class="founder-save" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.9)">You save $300/mo · $3,600/yr</div>
+      <div class="price-desc">For growing operations ready to run on near-full automation. Setup fee waived.</div>
       <ul class="flist">
         <li><span class="tick">✓</span> Everything in Starter</li>
         <li><span class="tick">✓</span> AI phone answering (24/7)</li>
@@ -824,14 +922,18 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
         <li><span class="tick">✓</span> Customer follow-up sequences</li>
         <li><span class="tick">✓</span> Revenue dashboard</li>
         <li><span class="tick">✓</span> Priority support + monthly call</li>
+        <li><span class="tick">✓</span> <span style="color:rgba(255,255,255,0.9);font-weight:600;">Setup fee waived (saves $697)</span></li>
       </ul>
-      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-white">Book a Demo</a>
+      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-white">Claim Founder Spot</a>
     </div>
+
     <div class="pcard">
       <div class="tier">Scale</div>
-      <div class="price">$799</div>
-      <div class="price-range">/ month + one-time setup</div>
-      <div class="price-desc">For multi-van operations, teams, and multiple locations.</div>
+      <div class="price-old">$799<span>/mo</span></div>
+      <div class="price founder-price">$399</div>
+      <div class="price-range">/ month · founder rate · locked in forever</div>
+      <div class="founder-save">You save $400/mo · $4,800/yr</div>
+      <div class="price-desc">For multi-van operations, teams, and multiple locations. Setup fee waived.</div>
       <ul class="flist">
         <li><span class="tick">✓</span> Everything in Professional</li>
         <li><span class="tick">✓</span> Multi-location support</li>
@@ -840,11 +942,13 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
         <li><span class="tick">✓</span> Advanced analytics</li>
         <li><span class="tick">✓</span> Dedicated account manager</li>
         <li><span class="tick">✓</span> Custom integrations</li>
+        <li><span class="tick founder-tick">✓</span> <span class="founder-perk">Setup fee waived (saves $997)</span></li>
       </ul>
-      <a href="#cta" class="pbtn pbtn-ghost">Talk to us</a>
+      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-ghost">Claim Founder Spot</a>
     </div>
+
   </div>
-  <p class="pricing-note">All plans include done-for-you setup. Cancel any time. No hidden fees.</p>
+  <p class="pricing-note">Founder rate locked in for life · No contracts · Cancel any time · <strong style="color:var(--white);">Only 6 spots left</strong></p>
 </section>
 
 <!-- FAQ -->
