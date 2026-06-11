@@ -243,7 +243,98 @@ h2 { font-size: clamp(30px, 4vw, 50px); font-weight: 800; letter-spacing: -1.5px
 .pbtn-white:hover { background: var(--off-white); }
 .pricing-note { text-align: center; margin-top: 24px; font-size: 13px; color: var(--grey); }
 
-/* FOUNDER PRICING */
+/* WRENCHLY PRO CARD */
+.pro-card-wrap { margin-top: 40px; }
+.pro-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  background: var(--navy);
+  border: 1px solid var(--blue-line);
+  border-radius: var(--rl);
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(37,99,235,0.08);
+}
+.pro-card-left {
+  padding: 44px 40px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.pro-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.pro-period {
+  font-size: 12px;
+  color: var(--grey);
+  align-self: flex-end;
+  padding-bottom: 6px;
+}
+.pro-desc {
+  font-size: 15px;
+  color: var(--grey);
+  line-height: 1.7;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  max-width: 380px;
+}
+.pro-card-right {
+  padding: 44px 40px;
+  background: rgba(0,0,0,0.2);
+}
+.pro-features-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue-b);
+  margin-bottom: 24px;
+}
+.pro-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.pro-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.pro-feat-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--blue-dim);
+  border: 1px solid var(--blue-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.pro-features li strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+.pro-features li span {
+  font-size: 13px;
+  color: var(--grey);
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .pro-card { grid-template-columns: 1fr; }
+  .pro-card-left { border-right: none; border-bottom: 1px solid var(--border); padding: 32px 24px; }
+  .pro-card-right { padding: 32px 24px; }
+}
 .founder-bar {
   margin: 32px 0 40px;
 }
@@ -1000,9 +1091,9 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 
 <!-- PRICING -->
 <section class="pricing" id="pricing">
-  <p class="label">Founder Pricing</p>
-  <h2>Early Access.<br><span class="blue">Half price. Forever.</span></h2>
-  <p class="sub">First 20 businesses get locked in at founder rates — permanently, for as long as you stay. After that, regular pricing applies.</p>
+  <p class="label">Simple Pricing</p>
+  <h2>One offer.<br><span class="blue">Everything included.</span></h2>
+  <p class="sub">No tiers. No confusing packages. One flat monthly rate — everything your trades business needs to run on autopilot.</p>
 
   <div class="founder-bar">
     <div class="founder-bar-inner">
@@ -1015,71 +1106,87 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
     </div>
   </div>
 
-  <div class="pgrid">
-
-    <div class="pcard">
-      <div class="tier">Starter</div>
-      <div class="price-old">$299<span>/mo</span></div>
-      <div class="price founder-price">$149</div>
-      <div class="price-range">/ month · founder rate · locked in forever</div>
-      <div class="founder-save">You save $150/mo · $1,800/yr</div>
-      <div class="price-desc">For sole traders just getting started with automation. Setup fee waived.</div>
-      <ul class="flist">
-        <li><span class="tick">✓</span> AI chatbot on your website</li>
-        <li><span class="tick">✓</span> Online booking calendar</li>
-        <li><span class="tick">✓</span> SMS booking confirmations</li>
-        <li><span class="tick">✓</span> Missed call text-back</li>
-        <li><span class="tick">✓</span> Google review automation</li>
-        <li><span class="tick">✓</span> Email support</li>
-        <li><span class="tick founder-tick">✓</span> <span class="founder-perk">Setup fee waived (saves $497)</span></li>
-      </ul>
-      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-ghost">Claim Founder Spot</a>
+  <div class="pro-card-wrap">
+    <div class="pro-card">
+      <div class="pro-card-left">
+        <div class="tier">Wrenchly Pro</div>
+        <div class="pro-price-row">
+          <div class="price-old">$597<span>/mo</span></div>
+          <div class="founder-price">$297</div>
+          <div class="pro-period">/ month · founder rate · locked in forever</div>
+        </div>
+        <div class="founder-save">You save $300/mo · $3,600/yr</div>
+        <p class="pro-desc">Everything your plumbing or electrical business needs to capture more leads, respond faster, and book more jobs — automatically. Done-for-you setup included.</p>
+        <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue" style="width:fit-content;margin-top:8px;">
+          Claim Your Founder Spot
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <p style="font-size:12px;color:var(--grey-d);margin-top:12px;">No contracts · Cancel any time · 30-day notice · Setup done for you</p>
+      </div>
+      <div class="pro-card-right">
+        <div class="pro-features-title">What's included</div>
+        <ul class="pro-features">
+          <li>
+            <div class="pro-feat-icon">📞</div>
+            <div>
+              <strong>AI Receptionist</strong>
+              <span>Answers every call 24/7, qualifies the lead, and books the job automatically</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">📲</div>
+            <div>
+              <strong>Missed Call Text Back</strong>
+              <span>Instantly texts any caller you miss — recovers leads before they call someone else</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">🎯</div>
+            <div>
+              <strong>Lead Qualification</strong>
+              <span>AI screens and scores every inbound lead so you focus on the jobs that matter</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">🗓️</div>
+            <div>
+              <strong>Smart Scheduling</strong>
+              <span>Books appointments directly into your calendar with confirmations and reminders</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">🔁</div>
+            <div>
+              <strong>Automated Follow-Up</strong>
+              <span>Keeps leads warm with timed sequences until they book — no lead left behind</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">⭐</div>
+            <div>
+              <strong>Review Requests</strong>
+              <span>Automatically asks for a Google review after every completed job</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">📊</div>
+            <div>
+              <strong>Business Dashboard</strong>
+              <span>One clear view of leads, bookings, revenue, and reviews in real time</span>
+            </div>
+          </li>
+          <li>
+            <div class="pro-feat-icon">🔧</div>
+            <div>
+              <strong>Done-For-You Setup</strong>
+              <span>We build and configure everything — you're live within 48 hours, no tech skills needed</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <div class="pcard featured">
-      <div class="popular-badge">Most popular</div>
-      <div class="tier">Professional</div>
-      <div class="price-old" style="color:rgba(255,255,255,0.4)">$599<span>/mo</span></div>
-      <div class="price founder-price">$299</div>
-      <div class="price-range">/ month · founder rate · locked in forever</div>
-      <div class="founder-save" style="background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.9)">You save $300/mo · $3,600/yr</div>
-      <div class="price-desc">For growing operations ready to run on near-full automation. Setup fee waived.</div>
-      <ul class="flist">
-        <li><span class="tick">✓</span> Everything in Starter</li>
-        <li><span class="tick">✓</span> AI phone answering (24/7)</li>
-        <li><span class="tick">✓</span> Website conversion overhaul</li>
-        <li><span class="tick">✓</span> Lead scoring &amp; routing</li>
-        <li><span class="tick">✓</span> CRM integration</li>
-        <li><span class="tick">✓</span> Customer follow-up sequences</li>
-        <li><span class="tick">✓</span> Revenue dashboard</li>
-        <li><span class="tick">✓</span> Priority support + monthly call</li>
-        <li><span class="tick">✓</span> <span style="color:rgba(255,255,255,0.9);font-weight:600;">Setup fee waived (saves $697)</span></li>
-      </ul>
-      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-white">Claim Founder Spot</a>
-    </div>
-
-    <div class="pcard">
-      <div class="tier">Scale</div>
-      <div class="price-old">$799<span>/mo</span></div>
-      <div class="price founder-price">$399</div>
-      <div class="price-range">/ month · founder rate · locked in forever</div>
-      <div class="founder-save">You save $400/mo · $4,800/yr</div>
-      <div class="price-desc">For multi-van operations, teams, and multiple locations. Setup fee waived.</div>
-      <ul class="flist">
-        <li><span class="tick">✓</span> Everything in Professional</li>
-        <li><span class="tick">✓</span> Multi-location support</li>
-        <li><span class="tick">✓</span> Team scheduling automation</li>
-        <li><span class="tick">✓</span> Custom AI quoting flows</li>
-        <li><span class="tick">✓</span> Advanced analytics</li>
-        <li><span class="tick">✓</span> Dedicated account manager</li>
-        <li><span class="tick">✓</span> Custom integrations</li>
-        <li><span class="tick founder-tick">✓</span> <span class="founder-perk">Setup fee waived (saves $997)</span></li>
-      </ul>
-      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="pbtn pbtn-ghost">Claim Founder Spot</a>
-    </div>
-
   </div>
-  <p class="pricing-note">Founder rate locked in for life · No contracts · Cancel any time · <strong style="color:var(--white);">Only 6 spots left</strong></p>
+  <p class="pricing-note">Founder rate locked in for life · Only <strong style="color:var(--white);">6 spots remaining</strong> at this price</p>
 </section>
 
 <!-- FAQ -->
