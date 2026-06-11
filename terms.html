@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wrenchly — Terms & Conditions + Client Acknowledgment</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#080A0F;--navy:#0D1117;--navy-2:#111827;--navy-3:#1A2235;
+  --blue:#2563EB;--blue-b:#3B82F6;--blue-dim:rgba(37,99,235,0.08);
+  --blue-line:rgba(37,99,235,0.3);--white:#FFFFFF;--off-white:#F0F4FF;
+  --grey:#8B9BB4;--grey-d:#3D4D66;--border:rgba(255,255,255,0.07);
+  --green:#22C55E;--red:#EF4444;--r:8px;--rl:16px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);font-size:16px;line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 6%;background:rgba(8,10,15,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.logo-text{font-size:20px;font-weight:800;color:var(--white);letter-spacing:-0.5px}
+.nav-back{font-size:14px;font-weight:500;color:var(--grey);text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s}
+.nav-back:hover{color:var(--white)}
+
+/* PAGE HERO */
+.page-hero{padding:64px 6% 48px;border-bottom:1px solid var(--border)}
+.page-label{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);margin-bottom:12px}
+.page-hero h1{font-size:clamp(28px,4vw,48px);font-weight:800;letter-spacing:-1.5px;color:var(--white);margin-bottom:8px}
+.page-hero p{font-size:15px;color:var(--grey);max-width:580px}
+.page-meta{display:flex;gap:24px;margin-top:20px;flex-wrap:wrap}
+.meta-pill{font-size:12px;font-weight:500;color:var(--grey);background:var(--navy-2);border:1px solid var(--border);padding:5px 12px;border-radius:100px;font-family:monospace}
+
+/* TAB NAV */
+.tab-nav{display:flex;gap:0;border-bottom:1px solid var(--border);padding:0 6%;background:var(--black);position:sticky;top:65px;z-index:90}
+.tab-btn{padding:14px 24px;font-size:14px;font-weight:600;color:var(--grey);cursor:pointer;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s;background:none;border-top:none;border-left:none;border-right:none;font-family:'Inter',sans-serif}
+.tab-btn:hover{color:var(--white)}
+.tab-btn.active{color:var(--blue-b);border-bottom-color:var(--blue)}
+
+/* TAB CONTENT */
+.tab-content{display:none;padding:56px 6%;max-width:900px}
+.tab-content.active{display:block}
+
+/* DOCUMENT STYLES */
+.doc-section{margin-bottom:40px}
+.doc-section h2{font-size:18px;font-weight:700;color:var(--white);margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border);letter-spacing:-0.3px}
+.doc-section h3{font-size:15px;font-weight:600;color:var(--off-white);margin:16px 0 8px}
+.doc-section p{font-size:14px;color:var(--grey);line-height:1.8;margin-bottom:10px}
+.doc-section ul{padding-left:20px;display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.doc-section ul li{font-size:14px;color:var(--grey);line-height:1.7}
+.doc-section a{color:var(--blue-b);text-decoration:none}
+.highlight-box{background:var(--navy-2);border:1px solid var(--border);border-left:3px solid var(--blue);border-radius:0 var(--r) var(--r) 0;padding:16px 20px;margin:16px 0}
+.highlight-box p{margin:0;font-size:13px;color:var(--off-white)}
+.warning-box{background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.2);border-left:3px solid var(--red);border-radius:0 var(--r) var(--r) 0;padding:16px 20px;margin:16px 0}
+.warning-box p{margin:0;font-size:13px;color:rgba(255,255,255,0.75)}
+
+/* ACKNOWLEDGMENT FORM */
+.ack-intro{background:var(--navy-2);border:1px solid var(--border);border-radius:var(--rl);padding:28px 32px;margin-bottom:32px}
+.ack-intro h3{font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px}
+.ack-intro p{font-size:14px;color:var(--grey);line-height:1.7}
+
+.ack-form{display:flex;flex-direction:column;gap:18px}
+.form-section-title{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);padding-bottom:12px;border-bottom:1px solid var(--border);margin-bottom:4px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-field{display:flex;flex-direction:column;gap:6px}
+.form-field label{font-size:12px;font-weight:600;color:var(--grey);letter-spacing:0.04em}
+.form-field input,.form-field select,.form-field textarea{background:var(--navy);border:1px solid rgba(255,255,255,0.1);border-radius:var(--r);padding:12px 16px;font-family:'Inter',sans-serif;font-size:14px;color:var(--white);outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%;-webkit-appearance:none}
+.form-field select option{background:var(--navy-2);color:var(--white)}
+.form-field input::placeholder,.form-field textarea::placeholder{color:var(--grey-d)}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.12)}
+.form-field textarea{resize:none;height:80px;line-height:1.6}
+
+/* Checkbox items */
+.ack-checks{display:flex;flex-direction:column;gap:14px;background:var(--navy-2);border:1px solid var(--border);border-radius:var(--rl);padding:24px}
+.ack-check{display:flex;align-items:flex-start;gap:14px}
+.ack-check input[type="checkbox"]{width:18px;height:18px;border-radius:4px;border:1px solid rgba(255,255,255,0.2);background:var(--navy);flex-shrink:0;margin-top:2px;accent-color:var(--blue);cursor:pointer}
+.ack-check-text strong{display:block;font-size:14px;font-weight:600;color:var(--white);margin-bottom:3px}
+.ack-check-text span{font-size:13px;color:var(--grey);line-height:1.55}
+
+/* Submit */
+.ack-submit{background:var(--blue);color:var(--white);border:none;border-radius:var(--r);padding:15px;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:background 0.2s,transform 0.15s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px}
+.ack-submit:hover:not(:disabled){background:var(--blue-b);transform:translateY(-1px)}
+.ack-submit:disabled{opacity:0.7;cursor:not-allowed;transform:none}
+.btn-loading{display:none;align-items:center;gap:8px}
+.ack-submit.loading .btn-text{display:none}
+.ack-submit.loading .btn-loading{display:flex}
+.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,0.3);border-top-color:white;border-radius:50%;animation:spin 0.7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.ack-success{display:none;flex-direction:column;align-items:center;gap:16px;padding:48px 32px;background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:var(--rl);text-align:center}
+.ack-success-icon{width:56px;height:56px;border-radius:50%;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.3);display:flex;align-items:center;justify-content:center;font-size:24px}
+.ack-success h3{font-size:20px;font-weight:700;color:var(--white)}
+.ack-success p{font-size:15px;color:var(--grey);line-height:1.6}
+
+.form-note{font-size:12px;color:var(--grey-d);text-align:center;margin-top:8px}
+
+/* FOOTER */
+footer{background:var(--navy);padding:32px 6%;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer p{font-size:13px;color:var(--grey-d)}
+.footer-logo{font-size:16px;font-weight:800;color:var(--grey);display:flex;align-items:center;gap:8px}
+
+@media(max-width:768px){
+  .form-row{grid-template-columns:1fr}
+  .tab-btn{padding:12px 14px;font-size:13px}
+  .tab-content{padding:40px 5%}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://trywrenchly.com" class="logo">
+    <div class="logo-icon">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+    </div>
+    <span class="logo-text">wrenchly</span>
+  </a>
+  <a href="https://trywrenchly.com" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+    Back to site
+  </a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <p class="page-label">Legal & Onboarding</p>
+  <h1>Terms, Conditions &<br>Client Acknowledgment</h1>
+  <p>Please read the terms of service carefully before using Wrenchly. The acknowledgment form must be completed before your account is activated.</p>
+  <div class="page-meta">
+    <span class="meta-pill">Last updated: June 2026</span>
+    <span class="meta-pill">Governing law: Ontario, Canada</span>
+    <span class="meta-pill">hello@trywrenchly.com</span>
+  </div>
+</div>
+
+<!-- TAB NAV -->
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('terms',this)">Terms & Conditions</button>
+  <button class="tab-btn" onclick="switchTab('ack',this)">Client Acknowledgment</button>
+</div>
+
+<!-- ═══════════════════════
+     TERMS & CONDITIONS
+═══════════════════════ -->
+<div class="tab-content active" id="tab-terms">
+
+  <div class="highlight-box">
+    <p>These Terms and Conditions ("Agreement") govern your use of Wrenchly's services. By subscribing to any Wrenchly plan, you agree to be bound by this Agreement. Please read it carefully.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>1. Parties & Definitions</h2>
+    <p><strong style="color:var(--white)">"Wrenchly"</strong> refers to the business operating under the trade name Wrenchly, a sole proprietorship registered in Ontario, Canada, with its principal place of business at 2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2.</p>
+    <p><strong style="color:var(--white)">"Client"</strong> refers to the individual or business entity that has subscribed to a Wrenchly plan.</p>
+    <p><strong style="color:var(--white)">"Services"</strong> refers to the AI automation systems, software, configurations, and support provided by Wrenchly, including but not limited to AI phone answering, booking automation, CRM integration, review automation, and website conversion tools.</p>
+    <p><strong style="color:var(--white)">"Platform"</strong> refers to the third-party software tools used to deliver the Services, including GoHighLevel and associated AI calling platforms.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>2. Services Provided</h2>
+    <p>Wrenchly will provide the Services outlined in the plan selected by the Client at the time of subscription. The specific features included in each plan are detailed on the Wrenchly website at trywrenchly.com and may be updated from time to time with reasonable notice to existing clients.</p>
+    <h3>2.1 Setup & Onboarding</h3>
+    <p>Wrenchly will complete initial setup and configuration of the Client's account within 48 hours of receiving all required onboarding information. The Client agrees to provide accurate business information, access credentials, and other materials reasonably required to complete setup.</p>
+    <h3>2.2 Service Delivery</h3>
+    <p>Wrenchly delivers its Services through a combination of proprietary configurations and licensed third-party platforms. The Client acknowledges that:</p>
+    <ul>
+      <li>The underlying AI technology is provided by third-party platforms and is subject to their availability and performance</li>
+      <li>Wrenchly will use commercially reasonable efforts to maintain service uptime but cannot guarantee 100% availability</li>
+      <li>Wrenchly is not responsible for outages, errors, or limitations caused by third-party platform providers</li>
+    </ul>
+    <h3>2.3 Modifications to Services</h3>
+    <p>Wrenchly reserves the right to modify, update, or improve the Services at any time. Material reductions in service features will be communicated to the Client with a minimum of 30 days' notice.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>3. Subscription, Billing & Payment</h2>
+    <h3>3.1 Subscription Plans</h3>
+    <p>Wrenchly offers monthly subscription plans as detailed on the pricing page. Subscriptions begin on the date of the first successful payment and renew automatically on the same date each month.</p>
+    <h3>3.2 Setup Fee</h3>
+    <p>A one-time setup fee may apply depending on the plan selected. The setup fee is non-refundable once onboarding has commenced. Where a setup fee waiver is offered as a promotional benefit, it applies only to the initial setup of one business account.</p>
+    <h3>3.3 Founder Pricing</h3>
+    <p>Clients who subscribe during the Wrenchly Founder Access period are entitled to the reduced founder rate for the duration of their continuous subscription. The founder rate is forfeited permanently if the subscription is cancelled and the Client re-subscribes at a later date, at which point standard pricing applies.</p>
+    <h3>3.4 Payment Processing</h3>
+    <p>All payments are processed securely through Stripe. Wrenchly does not store payment card information. By subscribing, you authorise Wrenchly to charge your payment method on a recurring monthly basis.</p>
+    <h3>3.5 Failed Payments</h3>
+    <p>If a payment fails, Wrenchly will attempt to retry the charge up to three times over seven days. If payment remains unsuccessful after three attempts, the Client's account may be suspended until payment is resolved. Wrenchly will notify the Client by email before suspending service.</p>
+    <h3>3.6 Price Changes</h3>
+    <p>Wrenchly reserves the right to adjust standard pricing with 60 days' written notice. Founder rate clients are exempt from standard price increases for the duration of their continuous subscription.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>4. Cancellation & Refunds</h2>
+    <h3>4.1 Cancellation by Client</h3>
+    <p>The Client may cancel their subscription at any time by providing 30 days' written notice to <a href="mailto:hello@trywrenchly.com">hello@trywrenchly.com</a>. The Client will continue to have access to the Services through the end of the paid billing period. No partial refunds are issued for unused portions of a billing period.</p>
+    <h3>4.2 30-Day Results Guarantee</h3>
+    <p>If a Client does not see measurable results within the first 30 days of service and has completed onboarding and actively used the Services, they may request a full refund of their first month's subscription fee. Refund requests must be submitted in writing within 35 days of the subscription start date. The setup fee is not refundable under this guarantee.</p>
+    <div class="highlight-box"><p>To qualify for the 30-day guarantee, the Client must have completed the onboarding process, provided all required business information, and the AI systems must have been actively deployed and in use.</p></div>
+    <h3>4.3 Cancellation by Wrenchly</h3>
+    <p>Wrenchly reserves the right to terminate a Client's subscription with 30 days' notice, or immediately in cases of:</p>
+    <ul>
+      <li>Breach of these Terms and Conditions</li>
+      <li>Use of the Services for unlawful purposes</li>
+      <li>Non-payment following the failed payment process in Section 3.5</li>
+      <li>Abusive conduct toward Wrenchly staff</li>
+    </ul>
+    <p>In the event of termination by Wrenchly without cause, any prepaid fees for unused service periods will be refunded on a pro-rata basis.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>5. Client Responsibilities</h2>
+    <p>The Client agrees to:</p>
+    <ul>
+      <li>Provide accurate and complete business information during onboarding and notify Wrenchly of any material changes</li>
+      <li>Ensure their business has the legal right to use AI-assisted communication with their customers in their jurisdiction</li>
+      <li>Comply with all applicable Canadian telecommunications and anti-spam laws (CRTC, CASL) in connection with their use of the Services</li>
+      <li>Not use the Services to send unsolicited communications, spam, or engage in any deceptive practices</li>
+      <li>Maintain the confidentiality of any login credentials provided by Wrenchly</li>
+      <li>Notify Wrenchly promptly of any security breaches or unauthorised access</li>
+      <li>Obtain any necessary consents from their customers before collecting or processing their personal information through the Services</li>
+    </ul>
+  </div>
+
+  <div class="doc-section">
+    <h2>6. Data & Privacy</h2>
+    <h3>6.1 Client Data</h3>
+    <p>Wrenchly collects and processes personal data in accordance with its Privacy Policy, available at trywrenchly.com. The Privacy Policy is incorporated into these Terms by reference.</p>
+    <h3>6.2 Customer Data</h3>
+    <p>In providing the Services, Wrenchly will process personal data belonging to the Client's customers (names, phone numbers, booking details) as a data processor on behalf of the Client. The Client is the data controller and is responsible for ensuring they have appropriate legal grounds to share this data with Wrenchly.</p>
+    <h3>6.3 Data on Cancellation</h3>
+    <p>Upon cancellation, Wrenchly will retain Client data for 30 days, during which the Client may request an export. After 30 days, all Client and customer data will be permanently deleted from Wrenchly's systems.</p>
+    <h3>6.4 Third-Party Platforms</h3>
+    <p>The Client acknowledges that data processed through the Services may pass through third-party platforms including GoHighLevel and AI calling providers. These platforms have their own privacy policies and data processing agreements.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>7. Intellectual Property</h2>
+    <p>All configurations, workflows, automation scripts, templates, and systems built by Wrenchly remain the intellectual property of Wrenchly. The Client is granted a non-exclusive licence to use these systems during the term of their subscription. Upon cancellation, this licence terminates.</p>
+    <p>The Client retains ownership of all their own business data, customer contacts, and content uploaded to the platform.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>8. Limitation of Liability</h2>
+    <div class="warning-box"><p>This section limits Wrenchly's liability. Please read it carefully.</p></div>
+    <p>To the maximum extent permitted by applicable law:</p>
+    <ul>
+      <li>Wrenchly's total liability to the Client for any claim arising from or related to the Services shall not exceed the total fees paid by the Client in the three months preceding the claim</li>
+      <li>Wrenchly shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including lost profits, lost revenue, or lost business opportunities</li>
+      <li>Wrenchly makes no guarantee that the Services will result in specific business outcomes, revenue increases, or a specific number of bookings</li>
+      <li>Wrenchly is not liable for failures, errors, or downtime caused by third-party platform providers</li>
+    </ul>
+    <p>Nothing in this section limits liability for fraud, gross negligence, or any liability that cannot be limited by law.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>9. Confidentiality</h2>
+    <p>Both parties agree to keep confidential any proprietary or sensitive information disclosed in connection with the Services, including but not limited to business strategies, customer data, pricing, and technical configurations. This obligation survives termination of the Agreement for a period of two years.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>10. Dispute Resolution</h2>
+    <p>The parties agree to attempt to resolve any dispute informally by contacting <a href="mailto:hello@trywrenchly.com">hello@trywrenchly.com</a> and allowing 30 days for a good-faith resolution. If informal resolution fails, disputes shall be resolved through binding arbitration in Toronto, Ontario, under the Arbitration Act, 1991 (Ontario). The language of arbitration shall be English.</p>
+    <p>These Terms are governed by the laws of the Province of Ontario and the federal laws of Canada applicable therein.</p>
+  </div>
+
+  <div class="doc-section">
+    <h2>11. General Provisions</h2>
+    <h3>11.1 Entire Agreement</h3>
+    <p>This Agreement, together with the Privacy Policy and any order confirmation, constitutes the entire agreement between the parties regarding the Services and supersedes all prior discussions and agreements.</p>
+    <h3>11.2 Amendments</h3>
+    <p>Wrenchly may update these Terms from time to time. Material changes will be communicated by email with 30 days' notice. Continued use of the Services after the effective date constitutes acceptance of the updated Terms.</p>
+    <h3>11.3 Severability</h3>
+    <p>If any provision of this Agreement is found to be unenforceable, the remaining provisions will continue in full force and effect.</p>
+    <h3>11.4 Waiver</h3>
+    <p>Failure by either party to enforce any provision of this Agreement does not constitute a waiver of that provision.</p>
+    <h3>11.5 Contact</h3>
+    <p>For any questions about these Terms, contact Wrenchly at <a href="mailto:hello@trywrenchly.com">hello@trywrenchly.com</a> or 2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2, Canada.</p>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════
+     ACKNOWLEDGMENT FORM
+═══════════════════════ -->
+<div class="tab-content" id="tab-ack">
+
+  <div class="ack-intro">
+    <h3>Client Onboarding Acknowledgment</h3>
+    <p>This form must be completed before your Wrenchly account is activated. It confirms you have read and agreed to the Terms and Conditions, and provides us with the information we need to set up your system correctly. Completion typically takes 3–4 minutes.</p>
+  </div>
+
+  <div id="ack-form-wrap">
+    <form class="ack-form" id="ack-form">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE">
+      <input type="hidden" name="subject" value="New Wrenchly Client Acknowledgment — Onboarding">
+      <input type="hidden" name="from_name" value="Wrenchly Onboarding">
+      <input type="checkbox" name="botcheck" style="display:none">
+
+      <!-- SECTION 1: Business Details -->
+      <div class="form-section-title">01 — Business Information</div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>Full legal name *</label>
+          <input type="text" name="full_name" placeholder="Mike Reeves" required>
+        </div>
+        <div class="form-field">
+          <label>Business name *</label>
+          <input type="text" name="business_name" placeholder="Reeves Plumbing" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>Business email *</label>
+          <input type="email" name="email" placeholder="mike@reevesplumbing.com" required>
+        </div>
+        <div class="form-field">
+          <label>Business phone *</label>
+          <input type="tel" name="phone" placeholder="416-555-0101" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>City / Province *</label>
+          <input type="text" name="city" placeholder="Toronto, ON" required>
+        </div>
+        <div class="form-field">
+          <label>Trade type *</label>
+          <select name="trade_type" required>
+            <option value="" disabled selected>Select your trade</option>
+            <option>Plumber</option>
+            <option>Electrician</option>
+            <option>HVAC</option>
+            <option>Handyman</option>
+            <option>Roofing Contractor</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>Number of employees</label>
+          <select name="employees">
+            <option value="" disabled selected>Select range</option>
+            <option>Just me (solo)</option>
+            <option>2–5 employees</option>
+            <option>6–15 employees</option>
+            <option>16+ employees</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Plan selected *</label>
+          <select name="plan" required>
+            <option value="" disabled selected>Select your plan</option>
+            <option>Starter — $149/mo (Founder)</option>
+            <option>Professional — $299/mo (Founder)</option>
+            <option>Scale — $399/mo (Founder)</option>
+            <option>Starter — $299/mo (Standard)</option>
+            <option>Professional — $599/mo (Standard)</option>
+            <option>Scale — $799/mo (Standard)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- SECTION 2: Setup Information -->
+      <div class="form-section-title" style="margin-top:8px">02 — Setup Information</div>
+
+      <div class="form-field">
+        <label>Business website URL (if any)</label>
+        <input type="url" name="website" placeholder="https://reevesplumbing.com">
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label>Phone number AI should answer *</label>
+          <input type="tel" name="ai_phone" placeholder="The number customers call" required>
+        </div>
+        <div class="form-field">
+          <label>Calendar / booking tool currently used</label>
+          <input type="text" name="calendar_tool" placeholder="e.g. Google Calendar, none">
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Briefly describe your typical job and service area</label>
+        <textarea name="service_description" placeholder="e.g. Residential plumbing repairs and installations across Toronto and GTA. Most jobs are emergency callouts and bathroom renovations."></textarea>
+      </div>
+
+      <div class="form-field">
+        <label>What is your biggest operational challenge right now?</label>
+        <textarea name="challenge" placeholder="e.g. Missing calls while on jobs, no time to follow up with leads..."></textarea>
+      </div>
+
+      <!-- SECTION 3: Acknowledgments -->
+      <div class="form-section-title" style="margin-top:8px">03 — Acknowledgments & Agreement</div>
+
+      <div class="ack-checks">
+        <div class="ack-check">
+          <input type="checkbox" name="ack_terms" required>
+          <div class="ack-check-text">
+            <strong>Terms & Conditions</strong>
+            <span>I have read and agree to Wrenchly's <a href="#" onclick="switchTab('terms',document.querySelector('.tab-btn'));return false;" style="color:var(--blue-b);">Terms and Conditions</a>. I understand these terms govern my subscription and use of the Services.</span>
+          </div>
+        </div>
+        <div class="ack-check">
+          <input type="checkbox" name="ack_privacy" required>
+          <div class="ack-check-text">
+            <strong>Privacy Policy</strong>
+            <span>I have read and agree to Wrenchly's Privacy Policy available at trywrenchly.com. I understand how my data and my customers' data will be collected, used, and protected.</span>
+          </div>
+        </div>
+        <div class="ack-check">
+          <input type="checkbox" name="ack_billing" required>
+          <div class="ack-check-text">
+            <strong>Recurring Billing</strong>
+            <span>I authorise Wrenchly to charge my payment method on a recurring monthly basis for the plan I have selected. I understand I can cancel with 30 days' written notice at any time.</span>
+          </div>
+        </div>
+        <div class="ack-check">
+          <input type="checkbox" name="ack_setup" required>
+          <div class="ack-check-text">
+            <strong>Setup & Onboarding</strong>
+            <span>I understand that my account will be configured within 48 hours of submitting this form and that I will be contacted by the Wrenchly team to complete setup. I agree to provide any additional information requested promptly.</span>
+          </div>
+        </div>
+        <div class="ack-check">
+          <input type="checkbox" name="ack_founder" id="ack_founder">
+          <div class="ack-check-text">
+            <strong>Founder Pricing Lock-in (if applicable)</strong>
+            <span>If I am subscribing at a founder rate, I understand this rate is locked in for the duration of my continuous subscription and will be forfeited permanently if I cancel and re-subscribe.</span>
+          </div>
+        </div>
+        <div class="ack-check">
+          <input type="checkbox" name="ack_comms">
+          <div class="ack-check-text">
+            <strong>Marketing Communications (optional)</strong>
+            <span>I consent to receiving occasional emails and SMS messages from Wrenchly with product updates, tips, and offers. I can unsubscribe at any time.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label>Digital signature — type your full name to sign *</label>
+        <input type="text" name="signature" placeholder="Type your full legal name" required>
+      </div>
+
+      <div class="form-field">
+        <label>Today's date *</label>
+        <input type="date" name="date" required>
+      </div>
+
+      <button type="submit" class="ack-submit" id="ack-submit">
+        <span class="btn-text">
+          Submit Acknowledgment & Begin Onboarding
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </span>
+        <span class="btn-loading">
+          <span class="spinner"></span>
+          Submitting...
+        </span>
+      </button>
+      <p class="form-note">Your submission is sent securely to the Wrenchly team. You will receive a confirmation email within 24 hours.</p>
+    </form>
+  </div>
+
+  <div class="ack-success" id="ack-success">
+    <div class="ack-success-icon">✓</div>
+    <h3>Acknowledgment received.</h3>
+    <p>Thanks — we have everything we need to get started. Your account will be set up within 48 hours and we'll be in touch to walk you through everything.</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <div style="width:24px;height:24px;background:var(--blue);border-radius:5px;display:flex;align-items:center;justify-content:center;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+    </div>
+    wrenchly
+  </div>
+  <p>© 2026 Wrenchly · 2 Bloor Street West, Suite 700, Toronto, Ontario · <a href="mailto:hello@trywrenchly.com" style="color:var(--grey-d);text-decoration:none;">hello@trywrenchly.com</a></p>
+  <a href="https://trywrenchly.com" style="font-size:13px;color:var(--blue-b);text-decoration:none;">trywrenchly.com</a>
+</footer>
+
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  if (btn && btn.classList) btn.classList.add('active');
+}
+
+document.getElementById('ack-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('ack-submit');
+  const form = document.getElementById('ack-form');
+  const successEl = document.getElementById('ack-success');
+  const formWrap = document.getElementById('ack-form-wrap');
+
+  btn.classList.add('loading');
+  btn.disabled = true;
+
+  const formData = new FormData(form);
+  const object = {};
+  formData.forEach((v, k) => { if (object[k]) { object[k] += ', ' + v; } else { object[k] = v; } });
+  const json = JSON.stringify(object);
+
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: json
+    });
+    const data = await res.json();
+    if (data.success) {
+      formWrap.style.display = 'none';
+      successEl.style.display = 'flex';
+    } else { throw new Error('Failed'); }
+  } catch(err) {
+    btn.classList.remove('loading');
+    btn.disabled = false;
+    alert('Something went wrong. Please try again or email hello@trywrenchly.com');
+  }
+});
+</script>
+</body>
+</html>
