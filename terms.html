@@ -339,35 +339,6 @@ footer p{font-size:13px;color:var(--grey-d)}
           <label>City / Province *</label>
           <input type="text" name="city" placeholder="Toronto, ON" required>
         </div>
-        <div class="form-field">
-          <label>Trade type *</label>
-          <select name="trade_type" required>
-            <option value="" disabled selected>Select your trade</option>
-            <option>Plumber</option>
-            <option>Electrician</option>
-            <option>Other</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-field">
-          <label>Number of employees</label>
-          <select name="employees">
-            <option value="" disabled selected>Select range</option>
-            <option>Just me (solo)</option>
-            <option>2–5 employees</option>
-            <option>6–15 employees</option>
-            <option>16+ employees</option>
-          </select>
-        </div>
-        <div class="form-field">
-          <label>Plan selected *</label>
-          <select name="plan" required>
-            <option value="" disabled selected>Select your plan</option>
-            <option>Wrenchly Pro — $297/mo</option>
-          </select>
-        </div>
       </div>
 
       <!-- SECTION 2: Setup Information -->
@@ -378,20 +349,9 @@ footer p{font-size:13px;color:var(--grey-d)}
         <input type="url" name="website" placeholder="https://reevesplumbing.com">
       </div>
 
-      <div class="form-row">
-        <div class="form-field">
-          <label>Phone number AI should answer *</label>
-          <input type="tel" name="ai_phone" placeholder="The number customers call" required>
-        </div>
-        <div class="form-field">
-          <label>Calendar / booking tool currently used</label>
-          <input type="text" name="calendar_tool" placeholder="e.g. Google Calendar, none">
-        </div>
-      </div>
-
       <div class="form-field">
-        <label>Briefly describe your typical job and service area</label>
-        <textarea name="service_description" placeholder="e.g. Residential plumbing repairs and installations across Toronto and GTA. Most jobs are emergency callouts and bathroom renovations."></textarea>
+        <label>Phone number *</label>
+        <input type="tel" name="ai_phone" placeholder="The number customers call" required>
       </div>
 
       <!-- SECTION 3: Acknowledgments -->
