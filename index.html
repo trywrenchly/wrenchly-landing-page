@@ -4,12 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wrenchly — AI Automation for Plumbers & Electricians | Never Miss a Job Again</title>
-
-<!-- Open Graph / Social sharing -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://trywrenchly.com/">
 <meta property="og:title" content="Wrenchly — AI Automation for Plumbers & Electricians | Never Miss a Job Again">
-<meta property="og:description" content="Wrenchly answers every call, books jobs automatically, and follows up with customers 24/7. Purpose-built for plumbers and electricians. Live in 48 hours. From $297/mo.">
+<meta property="og:description" content="Wrenchly answers every call, books jobs automatically, and follows up 24/7. Purpose-built for plumbers and electricians. Live in 48 hours. $297/mo.">
 <meta property="og:image" content="https://trywrenchly.com/og-image.png">
 <meta property="og:image:secure_url" content="https://trywrenchly.com/og-image.png">
 <meta property="og:image:type" content="image/png">
@@ -18,19 +16,14 @@
 <meta property="og:image:alt" content="Wrenchly — AI automation for plumbers and electricians">
 <meta property="og:site_name" content="Wrenchly">
 <meta property="og:locale" content="en_CA">
-
-<!-- Twitter / X card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@trywrenchly">
 <meta name="twitter:url" content="https://trywrenchly.com/">
 <meta name="twitter:title" content="Wrenchly — AI Automation for Plumbers & Electricians | Never Miss a Job Again">
-<meta name="twitter:description" content="Wrenchly answers every call, books jobs automatically, and follows up with customers 24/7. Purpose-built for plumbers and electricians. Live in 48 hours. From $297/mo.">
+<meta name="twitter:description" content="Wrenchly answers every call, books jobs automatically, and follows up 24/7. Purpose-built for plumbers and electricians. Live in 48 hours. $297/mo.">
 <meta name="twitter:image" content="https://trywrenchly.com/og-image.png">
-<meta name="twitter:image:alt" content="Wrenchly — AI automation for plumbers and electricians">
-
-<!-- SEO + WhatsApp / iMessage / general -->
-<meta name="description" content="Wrenchly answers every call, books jobs automatically, and follows up with customers 24/7. Purpose-built for plumbers and electricians in Canada. Live in 48 hours. From $297/mo.">
-<meta name="keywords" content="AI automation plumbers, AI for electricians, trades business software, missed call recovery, AI receptionist trades, booking automation Canada, plumbing business software Ontario, electrician business software">
+<meta name="description" content="Wrenchly answers every call, books jobs automatically, and follows up 24/7. Purpose-built for plumbers and electricians in Canada. Live in 48 hours. $297/mo.">
+<meta name="keywords" content="AI automation plumbers, AI for electricians, trades business software, missed call recovery, AI receptionist trades, booking automation Canada">
 <meta name="author" content="Wrenchly">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#2563EB">
@@ -38,647 +31,237 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --black:     #080A0F;
-  --navy:      #0D1117;
-  --navy-2:    #111827;
-  --navy-3:    #1A2235;
-  --blue:      #2563EB;
-  --blue-b:    #3B82F6;
-  --blue-dim:  rgba(37,99,235,0.08);
-  --blue-line: rgba(37,99,235,0.3);
-  --white:     #FFFFFF;
-  --off-white: #F0F4FF;
-  --grey:      #8B9BB4;
-  --grey-d:    #3D4D66;
-  --border:    rgba(255,255,255,0.07);
-  --green:     #22C55E;
-  --red:       #EF4444;
-  --r:         8px;
-  --rl:        16px;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#080A0F;--navy:#0D1117;--navy-2:#111827;--navy-3:#1A2235;
+  --blue:#2563EB;--blue-b:#3B82F6;--blue-dim:rgba(37,99,235,0.08);
+  --blue-line:rgba(37,99,235,0.3);--white:#FFFFFF;--off-white:#F0F4FF;
+  --grey:#8B9BB4;--grey-d:#3D4D66;--border:rgba(255,255,255,0.07);
+  --green:#22C55E;--red:#EF4444;--r:8px;--rl:16px;
 }
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--white); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--black);color:var(--white);font-size:16px;line-height:1.6;overflow-x:hidden}
 
 /* NAV */
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 6%; background: rgba(8,10,15,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
-.logo-text { font-size: 20px; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
-.nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
-.nav-links a { font-size: 14px; font-weight: 500; color: var(--grey); text-decoration: none; transition: color 0.2s; }
-.nav-links a:hover { color: var(--white); }
-.nav-btn { background: var(--blue) !important; color: var(--white) !important; padding: 9px 20px; border-radius: var(--r); font-weight: 600 !important; transition: background 0.2s !important; }
-.nav-btn:hover { background: var(--blue-b) !important; }
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:18px 6%;background:rgba(8,10,15,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.logo-text{font-size:20px;font-weight:800;color:var(--white);letter-spacing:-0.5px}
+.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+.nav-links a{font-size:14px;font-weight:500;color:var(--grey);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--white)}
+.nav-btn{background:var(--blue)!important;color:var(--white)!important;padding:9px 20px;border-radius:var(--r);font-weight:600!important;transition:background 0.2s!important}
+.nav-btn:hover{background:var(--blue-b)!important}
 
 /* BUTTONS */
-.btn-blue { background: var(--blue); color: var(--white); padding: 15px 30px; border-radius: var(--r); font-size: 15px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; display: inline-flex; align-items: center; gap: 8px; }
-.btn-blue:hover { background: var(--blue-b); transform: translateY(-1px); }
-.btn-outline { background: transparent; color: var(--off-white); padding: 15px 24px; border-radius: var(--r); font-size: 15px; font-weight: 500; text-decoration: none; border: 1px solid rgba(255,255,255,0.15); cursor: pointer; transition: border-color 0.2s, color 0.2s; display: inline-flex; align-items: center; gap: 8px; }
-.btn-outline:hover { border-color: var(--blue); color: var(--blue-b); }
+.btn-blue{background:var(--blue);color:var(--white);padding:15px 30px;border-radius:var(--r);font-size:15px;font-weight:600;text-decoration:none;border:none;cursor:pointer;transition:background 0.2s,transform 0.15s;display:inline-flex;align-items:center;gap:8px}
+.btn-blue:hover{background:var(--blue-b);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--off-white);padding:15px 24px;border-radius:var(--r);font-size:15px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.15);cursor:pointer;transition:border-color 0.2s,color 0.2s;display:inline-flex;align-items:center;gap:8px}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue-b)}
 
 /* SECTIONS */
-section { padding: 96px 6%; }
-.label { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-b); margin-bottom: 14px; }
-h2 { font-size: clamp(30px, 4vw, 50px); font-weight: 800; letter-spacing: -1.5px; line-height: 1.06; color: var(--white); }
-.sub { font-size: 17px; color: var(--grey); max-width: 560px; line-height: 1.7; margin-top: 14px; }
-.blue { color: var(--blue-b); }
+section{padding:80px 6%}
+.label{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);margin-bottom:14px}
+h2{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-1.5px;line-height:1.06;color:var(--white)}
+.sub{font-size:17px;color:var(--grey);max-width:500px;line-height:1.7;margin-top:14px}
+.blue{color:var(--blue-b)}
 
 /* HERO */
-.hero { min-height: 100vh; display: flex; align-items: center; padding: 130px 6% 80px; position: relative; overflow: hidden; gap: 60px; flex-wrap: wrap; }
-.hero::before { content: ''; position: absolute; top: -200px; left: -150px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(37,99,235,0.2) 0%, transparent 65%); pointer-events: none; }
-.hero-left { flex: 1; min-width: 300px; max-width: 620px; position: relative; z-index: 1; }
-.hero-right { flex: 1; min-width: 280px; max-width: 420px; position: relative; z-index: 1; }
+.hero{min-height:100vh;display:flex;align-items:center;padding:130px 6% 80px;position:relative;overflow:hidden;gap:60px;flex-wrap:wrap}
+.hero::before{content:'';position:absolute;top:-200px;left:-150px;width:700px;height:700px;background:radial-gradient(circle,rgba(37,99,235,0.2) 0%,transparent 65%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-100px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%);pointer-events:none}
+.hero-left{flex:1;min-width:300px;max-width:600px;position:relative;z-index:1}
+.hero-right{flex:1;min-width:280px;max-width:400px;position:relative;z-index:1}
 
-.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--blue-dim); border: 1px solid var(--blue-line); color: var(--blue-b); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 28px; animation: fadeUp 0.5s ease both 0.1s; }
-.badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue-b); animation: blink 2s ease-in-out infinite; }
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--blue-dim);border:1px solid var(--blue-line);color:var(--blue-b);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:28px;animation:fadeUp 0.5s ease both 0.1s}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--blue-b);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.25}}
 
-.hero h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 900; line-height: 1.02; letter-spacing: -2.5px; margin-bottom: 24px; animation: fadeUp 0.6s ease both 0.2s; }
-.hero-sub { font-size: 17px; color: var(--grey); max-width: 520px; margin-bottom: 16px; line-height: 1.7; animation: fadeUp 0.6s ease both 0.35s; }
-.hero-mission { font-size: 14px; color: var(--grey-d); max-width: 520px; margin-bottom: 40px; line-height: 1.75; padding-left: 14px; border-left: 2px solid var(--blue-line); animation: fadeUp 0.6s ease both 0.4s; font-style: italic; }
-.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 52px; animation: fadeUp 0.6s ease both 0.45s; }
-.hero-stats { display: flex; gap: 36px; flex-wrap: wrap; padding-top: 40px; border-top: 1px solid var(--border); animation: fadeUp 0.6s ease both 0.55s; }
-.stat-num { font-size: 28px; font-weight: 800; letter-spacing: -1px; color: var(--white); }
-.stat-label { font-size: 12px; color: var(--grey); margin-top: 2px; }
+.hero h1{font-size:clamp(40px,6vw,70px);font-weight:900;line-height:1.02;letter-spacing:-2.5px;margin-bottom:24px;animation:fadeUp 0.6s ease both 0.2s}
+.hero-sub{font-size:17px;color:var(--grey);max-width:500px;margin-bottom:16px;line-height:1.7;animation:fadeUp 0.6s ease both 0.35s}
+.hero-mission{font-size:14px;color:var(--grey-d);max-width:500px;margin-bottom:40px;line-height:1.75;padding-left:14px;border-left:2px solid var(--blue-line);animation:fadeUp 0.6s ease both 0.4s;font-style:italic}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:52px;animation:fadeUp 0.6s ease both 0.45s}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap;padding-top:40px;border-top:1px solid var(--border);animation:fadeUp 0.6s ease both 0.55s}
+.stat-num{font-size:28px;font-weight:800;letter-spacing:-1px;color:var(--white)}
+.stat-label{font-size:12px;color:var(--grey);margin-top:2px}
 
 /* PHONE MOCKUP */
-.phone-mockup { background: var(--navy-2); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 12px; animation: fadeUp 0.7s ease both 0.3s; box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(37,99,235,0.1); }
-.phone-header { display: flex; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
-.phone-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--blue-dim); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 16px; }
-.phone-title { font-size: 13px; font-weight: 600; color: var(--white); }
-.phone-sub { font-size: 11px; color: var(--green); }
-.call-ring { background: rgba(37,99,235,0.12); border: 1px solid var(--blue-line); border-radius: 12px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
-.call-ring-icon { width: 36px; height: 36px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; animation: ring 1.5s ease-in-out infinite; }
-@keyframes ring { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
-.call-info { flex: 1; }
-.call-info strong { display: block; font-size: 13px; font-weight: 600; color: var(--white); }
-.call-info span { font-size: 11px; color: var(--grey); }
-.call-badge { background: var(--green); color: white; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 100px; }
-.chat-bubble { border-radius: 12px; padding: 12px 14px; font-size: 13px; line-height: 1.5; }
-.bubble-ai { background: var(--blue); color: white; border-bottom-left-radius: 4px; }
-.bubble-user { background: var(--navy-3); color: var(--off-white); border-bottom-right-radius: 4px; align-self: flex-end; }
-.bubbles { display: flex; flex-direction: column; gap: 8px; }
-.booking-confirm { background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.25); border-radius: 12px; padding: 14px 16px; }
-.confirm-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.confirm-check { width: 20px; height: 20px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; font-size: 11px; color: white; flex-shrink: 0; }
-.confirm-title { font-size: 13px; font-weight: 700; color: var(--green); }
-.confirm-detail { font-size: 12px; color: var(--grey); line-height: 1.6; }
-.cal-slot { background: rgba(37,99,235,0.1); border: 1px solid var(--blue-line); border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; }
-.cal-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue-b); flex-shrink: 0; }
-.cal-text { font-size: 12px; color: var(--off-white); font-weight: 500; }
-
-/* STRIP */
-.strip { background: var(--navy); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 18px 6%; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
-.strip-label { font-size: 12px; font-weight: 600; color: var(--grey-d); text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
-.strip-items { display: flex; gap: 32px; flex-wrap: wrap; }
-.strip-item { display: flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 500; color: var(--grey); }
-.strip-item::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); flex-shrink: 0; }
+.phone-mockup{background:var(--navy-2);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:12px;animation:fadeUp 0.7s ease both 0.3s;box-shadow:0 40px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(37,99,235,0.1)}
+.pw-header{display:flex;align-items:center;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.pw-avatar{width:36px;height:36px;border-radius:50%;background:rgba(37,99,235,0.2);border:1px solid rgba(37,99,235,0.4);display:flex;align-items:center;justify-content:center;font-size:16px}
+.pw-name{font-size:13px;font-weight:600;color:var(--white)}
+.pw-status{font-size:9px;color:var(--green)}
+.pw-call{background:rgba(37,99,235,0.12);border:1px solid rgba(37,99,235,0.25);border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.pw-call-icon{width:36px;height:36px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;animation:ring 1.5s ease-in-out infinite}
+@keyframes ring{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.pw-call-info strong{display:block;font-size:13px;font-weight:600;color:var(--white)}
+.pw-call-info span{font-size:11px;color:var(--grey)}
+.pw-badge{background:var(--green);color:white;font-size:10px;font-weight:700;padding:3px 8px;border-radius:100px}
+.chat-bubble{border-radius:12px;padding:12px 14px;font-size:13px;line-height:1.5}
+.bubble-ai{background:var(--blue);color:white;border-bottom-left-radius:4px}
+.bubble-user{background:var(--navy-3);color:var(--off-white);border-bottom-right-radius:4px;align-self:flex-end}
+.bubbles{display:flex;flex-direction:column;gap:8px}
+.pw-booked{background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.pw-check{width:20px;height:20px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;color:white;flex-shrink:0}
+.pw-booked strong{display:block;font-size:13px;font-weight:700;color:var(--green)}
+.pw-booked span{font-size:11px;color:var(--grey)}
+.pw-cal{background:rgba(37,99,235,0.1);border:1px solid var(--blue-line);border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.pw-cal-dot{width:8px;height:8px;border-radius:50%;background:var(--blue-b);flex-shrink:0}
+.pw-cal-text{font-size:12px;color:var(--off-white);font-weight:500}
 
 /* PROBLEM */
-.problem { background: var(--navy); }
-.problem-closing { font-size: 18px; font-weight: 700; color: var(--white); margin-top: 40px; padding: 24px 28px; background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.2); border-radius: var(--r); border-left: 3px solid var(--red); }
-.prob-list { display: flex; flex-direction: column; gap: 14px; margin-top: 36px; }
-.prob-item { display: flex; align-items: flex-start; gap: 14px; padding: 18px 22px; background: var(--navy-2); border: 1px solid var(--border); border-radius: var(--r); transition: border-color 0.2s; }
-.prob-item:hover { border-color: rgba(239,68,68,0.25); }
-.prob-x { width: 24px; height: 24px; border-radius: 50%; background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); display: flex; align-items: center; justify-content: center; color: var(--red); font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
-.prob-item strong { display: block; font-size: 15px; font-weight: 600; color: var(--white); margin-bottom: 2px; }
-.prob-item span { font-size: 14px; color: var(--grey); }
-
-/* SOLUTION */
-.solution { background: var(--black); }
-.solution-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 48px; }
-.sol-card { background: var(--navy); border: 1px solid var(--border); border-radius: var(--rl); padding: 32px 28px; text-align: center; position: relative; overflow: hidden; transition: border-color 0.3s, transform 0.2s; }
-.sol-card:hover { border-color: var(--blue-line); transform: translateY(-3px); }
-.sol-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--blue); opacity: 0; transition: opacity 0.3s; }
-.sol-card:hover::before { opacity: 1; }
-.sol-num { font-size: 48px; font-weight: 900; color: rgba(37,99,235,0.12); line-height: 1; margin-bottom: 12px; letter-spacing: -2px; }
-.sol-card h3 { font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
-.sol-card p { font-size: 14px; color: var(--grey); line-height: 1.65; }
+.problem{background:var(--navy);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.prob-list{display:flex;flex-direction:column;gap:12px;margin-top:36px}
+.prob-item{display:flex;align-items:flex-start;gap:14px;padding:18px 22px;background:var(--navy-2);border:1px solid var(--border);border-radius:var(--r);transition:border-color 0.2s}
+.prob-item:hover{border-color:rgba(239,68,68,0.25)}
+.prob-x{width:24px;height:24px;border-radius:50%;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.25);display:flex;align-items:center;justify-content:center;color:var(--red);font-size:12px;font-weight:700;flex-shrink:0;margin-top:1px}
+.prob-item strong{display:block;font-size:15px;font-weight:600;color:var(--white);margin-bottom:2px}
+.prob-item span{font-size:14px;color:var(--grey)}
+.prob-closing{font-size:17px;font-weight:700;color:var(--white);margin-top:32px;padding:20px 24px;background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.18);border-left:3px solid var(--red);border-radius:0 var(--r) var(--r) 0}
 
 /* HOW IT WORKS */
-.how { background: var(--navy); }
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 52px; position: relative; }
-.steps::before { content: ''; position: absolute; top: 26px; left: 8%; right: 8%; height: 1px; background: linear-gradient(90deg, transparent, var(--blue-line), var(--blue-line), transparent); }
-.step-num { width: 52px; height: 52px; border-radius: 50%; background: var(--navy-3); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800; color: var(--blue-b); margin-bottom: 20px; position: relative; z-index: 1; }
-.step h3 { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-.step p { font-size: 13px; color: var(--grey); line-height: 1.6; }
+.how{background:var(--black)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-top:52px;position:relative}
+.steps::before{content:'';position:absolute;top:26px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,var(--blue-line),var(--blue-line),transparent)}
+.step-num{width:52px;height:52px;border-radius:50%;background:var(--navy-3);border:1px solid var(--blue-line);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--blue-b);margin-bottom:20px;position:relative;z-index:1}
+.step h3{font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px}
+.step p{font-size:14px;color:var(--grey);line-height:1.6}
 
-/* FEATURES */
-.features { background: var(--black); }
-.feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 48px; }
-.feat-card { background: var(--navy); border: 1px solid var(--border); border-radius: var(--rl); padding: 30px 26px; transition: border-color 0.3s, transform 0.2s; }
-.feat-card:hover { border-color: var(--blue-line); transform: translateY(-3px); }
-.feat-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--blue-dim); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 16px; }
-.feat-card h3 { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-.feat-card p { font-size: 14px; color: var(--grey); line-height: 1.65; }
-
-/* DEMO */
-.demo { background: var(--navy); text-align: center; }
-.video-placeholder { margin: 48px auto 0; max-width: 800px; background: var(--navy-3); border: 1px solid var(--border); border-radius: var(--rl); overflow: hidden; aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; position: relative; cursor: pointer; transition: border-color 0.3s; }
-.video-placeholder:hover { border-color: var(--blue-line); }
-.video-placeholder::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(37,99,235,0.12) 0%, transparent 70%); pointer-events: none; }
-.play-btn { width: 72px; height: 72px; border-radius: 50%; background: var(--blue); display: flex; align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s; }
-.video-placeholder:hover .play-btn { transform: scale(1.08); background: var(--blue-b); }
-.play-btn svg { margin-left: 4px; }
-.video-label { font-size: 16px; font-weight: 600; color: var(--grey); }
-.video-sub { font-size: 13px; color: var(--grey-d); }
-
-/* ROI */
-.roi { background: var(--black); }
-.roi-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; flex-wrap: wrap; margin-top: 48px; }
-.roi-box { background: var(--navy); border: 1px solid var(--border); border-radius: var(--rl); padding: 36px 32px; }
-.roi-row { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--border); }
-.roi-row:last-child { border-bottom: none; }
-.roi-row span { font-size: 14px; color: var(--grey); }
-.roi-row strong { font-size: 15px; font-weight: 700; color: var(--white); }
-.roi-highlight { font-size: 18px !important; color: var(--green) !important; }
-.roi-statement { font-size: 20px; font-weight: 700; color: var(--white); line-height: 1.5; margin-top: 28px; padding: 24px 28px; background: rgba(37,99,235,0.08); border: 1px solid var(--blue-line); border-radius: var(--r); border-left: 3px solid var(--blue); }
-
-/* WHO */
-.who { background: var(--navy); }
-.who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-top: 48px; }
-.who-card { background: var(--navy-2); border: 1px solid var(--border); border-radius: var(--rl); padding: 28px 20px; text-align: center; transition: border-color 0.3s, transform 0.2s; }
-.who-card:hover { border-color: var(--blue-line); transform: translateY(-3px); }
-.who-icon { font-size: 32px; margin-bottom: 12px; }
-.who-card h3 { font-size: 14px; font-weight: 700; color: var(--white); }
-
-/* TESTIMONIALS */
-.testimonials { background: var(--black); }
-.tgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 48px; }
-.tcard { background: var(--navy); border: 1px solid var(--border); border-radius: var(--rl); padding: 28px; display: flex; flex-direction: column; gap: 16px; transition: border-color 0.3s; }
-.tcard:hover { border-color: var(--blue-line); }
-.stars { color: var(--blue-b); font-size: 13px; letter-spacing: 3px; }
-.tcard blockquote { font-size: 15px; line-height: 1.75; color: var(--off-white); font-style: italic; flex: 1; }
-.tauthor { display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--border); padding-top: 16px; }
-.avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--blue-dim); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: var(--blue-b); flex-shrink: 0; }
-.tauthor strong { display: block; font-size: 14px; font-weight: 600; color: var(--white); }
-.tauthor span { font-size: 12px; color: var(--grey); }
+/* FEATURES TABS */
+.features{background:var(--navy);border-top:1px solid var(--border)}
+.feat-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-top:36px;overflow-x:auto}
+.feat-tab{padding:12px 22px;font-size:14px;font-weight:600;color:var(--grey);cursor:pointer;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s;white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;font-family:'Inter',sans-serif}
+.feat-tab:hover{color:var(--white)}
+.feat-tab.active{color:var(--blue-b);border-bottom-color:var(--blue)}
+.feat-panel{display:none;padding:32px 0 0}
+.feat-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.feat-card{background:var(--navy-2);border:1px solid var(--border);border-radius:var(--rl);padding:28px;transition:border-color 0.2s}
+.feat-card:hover{border-color:var(--blue-line)}
+.feat-icon{width:42px;height:42px;border-radius:10px;background:var(--blue-dim);border:1px solid var(--blue-line);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:14px}
+.feat-card h3{font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px}
+.feat-card p{font-size:13px;color:var(--grey);line-height:1.65}
 
 /* PRICING */
-.pricing { background: var(--navy); }
-.pgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 48px; align-items: start; }
-.pcard { background: var(--navy-2); border: 1px solid var(--border); border-radius: var(--rl); padding: 32px 28px; position: relative; transition: transform 0.2s, border-color 0.2s; }
-.pcard:hover { transform: translateY(-3px); border-color: rgba(255,255,255,0.12); }
-.pcard.featured { background: var(--blue); border-color: var(--blue); transform: scale(1.03); }
-.pcard.featured:hover { transform: scale(1.03) translateY(-3px); }
-.popular-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--white); color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 16px; border-radius: 100px; white-space: nowrap; }
-.tier { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-b); margin-bottom: 10px; }
-.pcard.featured .tier { color: rgba(255,255,255,0.7); }
-.price { font-size: 48px; font-weight: 900; letter-spacing: -2px; line-height: 1; color: var(--white); }
-.price-range { font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 6px; }
-.pcard.featured .price-range { color: rgba(255,255,255,0.6); }
-.price-desc { font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); line-height: 1.55; }
-.pcard.featured .price-desc { color: rgba(255,255,255,0.75); }
-.flist { list-style: none; display: flex; flex-direction: column; gap: 11px; margin-bottom: 28px; }
-.flist li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.5; }
-.pcard.featured .flist li { color: rgba(255,255,255,0.88); }
-.tick { width: 18px; height: 18px; border-radius: 50%; background: var(--blue-dim); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--blue-b); flex-shrink: 0; margin-top: 1px; }
-.pcard.featured .tick { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); color: var(--white); }
-.pbtn { width: 100%; padding: 13px; border-radius: var(--r); font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s; text-align: center; text-decoration: none; display: block; }
-.pbtn-ghost { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: var(--white); }
-.pbtn-ghost:hover { border-color: var(--blue); color: var(--blue-b); }
-.pbtn-white { background: var(--white); border: 1px solid var(--white); color: var(--blue); }
-.pbtn-white:hover { background: var(--off-white); }
-.pricing-note { text-align: center; margin-top: 24px; font-size: 13px; color: var(--grey); }
+.pricing{background:var(--black);border-top:1px solid var(--border)}
+.pro-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--navy);border:1px solid var(--blue-line);border-radius:var(--rl);overflow:hidden;margin-top:40px;box-shadow:0 0 60px rgba(37,99,235,0.08)}
+.pro-left{padding:44px 40px;border-right:1px solid var(--border)}
+.pro-right{padding:44px 40px;background:rgba(0,0,0,0.2)}
+.tier{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);margin-bottom:10px}
+.pro-price{font-size:56px;font-weight:900;letter-spacing:-2px;line-height:1;color:var(--white);margin-bottom:4px}
+.pro-period{font-size:13px;color:var(--grey);margin-bottom:16px}
+.pro-desc{font-size:15px;color:var(--grey);line-height:1.7;margin-bottom:28px;max-width:340px}
+.pro-features-title{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);margin-bottom:20px}
+.pro-features{list-style:none;display:flex;flex-direction:column;gap:16px}
+.pro-features li{display:flex;align-items:flex-start;gap:12px}
+.pro-feat-icon{width:34px;height:34px;border-radius:8px;background:var(--blue-dim);border:1px solid var(--blue-line);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.pro-features li strong{display:block;font-size:14px;font-weight:600;color:var(--white);margin-bottom:2px}
+.pro-features li span{font-size:13px;color:var(--grey);line-height:1.5}
+.pricing-note{text-align:center;margin-top:20px;font-size:13px;color:var(--grey)}
 
-/* WRENCHLY PRO CARD */
-.pro-card-wrap { margin-top: 40px; }
-.pro-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  background: var(--navy);
-  border: 1px solid var(--blue-line);
-  border-radius: var(--rl);
-  overflow: hidden;
-  box-shadow: 0 0 60px rgba(37,99,235,0.08);
-}
-.pro-card-left {
-  padding: 44px 40px;
-  border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-.pro-price-row {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-}
-.pro-period {
-  font-size: 12px;
-  color: var(--grey);
-  align-self: flex-end;
-  padding-bottom: 6px;
-}
-.pro-desc {
-  font-size: 15px;
-  color: var(--grey);
-  line-height: 1.7;
-  margin-top: 16px;
-  margin-bottom: 24px;
-  max-width: 380px;
-}
-.pro-card-right {
-  padding: 44px 40px;
-  background: rgba(0,0,0,0.2);
-}
-.pro-features-title {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--blue-b);
-  margin-bottom: 24px;
-}
-.pro-features {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.pro-features li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-.pro-feat-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: var(--blue-dim);
-  border: 1px solid var(--blue-line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-.pro-features li strong {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 2px;
-}
-.pro-features li span {
-  font-size: 13px;
-  color: var(--grey);
-  line-height: 1.5;
-}
-@media (max-width: 900px) {
-  .pro-card { grid-template-columns: 1fr; }
-  .pro-card-left { border-right: none; border-bottom: 1px solid var(--border); padding: 32px 24px; }
-  .pro-card-right { padding: 32px 24px; }
-}
-.founder-bar {
-  margin: 32px 0 40px;
-}
-.founder-bar-inner {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: rgba(37,99,235,0.08);
-  border: 1px solid var(--blue-line);
-  border-radius: 100px;
-  padding: 10px 20px;
-  max-width: 540px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.founder-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: var(--blue-b);
-  animation: blink 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-.founder-text {
-  font-size: 13px;
-  color: var(--off-white);
-}
-.founder-track {
-  width: 100px;
-  height: 4px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 100px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.founder-fill {
-  height: 100%;
-  background: var(--blue);
-  border-radius: 100px;
-}
-.founder-pct {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--blue-b);
-  white-space: nowrap;
-}
-.price-old {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--grey-d);
-  text-decoration: line-through;
-  margin-bottom: 2px;
-}
-.price-old span { font-size: 14px; }
-.founder-price {
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  line-height: 1;
-  color: var(--white);
-  margin-bottom: 4px;
-}
-.founder-save {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(34,197,94,0.08);
-  border: 1px solid rgba(34,197,94,0.2);
-  color: var(--green);
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 12px;
-  border-radius: 100px;
-  margin-bottom: 14px;
-}
-.founder-tick { background: rgba(34,197,94,0.1) !important; border-color: rgba(34,197,94,0.25) !important; color: var(--green) !important; }
-.founder-perk { color: var(--green) !important; font-weight: 600; }
+/* ROI CALLOUT */
+.roi-callout{display:flex;align-items:center;gap:12px;background:rgba(37,99,235,0.08);border:1px solid var(--blue-line);border-radius:var(--r);padding:16px 20px;margin-bottom:24px}
+.roi-callout svg{color:var(--blue-b);flex-shrink:0}
+.roi-callout p{font-size:14px;color:var(--off-white);line-height:1.55}
+.roi-callout strong{color:var(--white)}
 
-/* ABOUT */
-.about { background: var(--navy); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.about-inner { display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: start; }
-.about-body { font-size: 15px; color: var(--grey); line-height: 1.8; margin-top: 16px; }
-.about-values { display: flex; flex-direction: column; gap: 18px; margin-top: 36px; padding-top: 36px; border-top: 1px solid var(--border); }
-.about-value { display: flex; align-items: flex-start; gap: 14px; }
-.av-icon { width: 38px; height: 38px; border-radius: 9px; background: var(--blue-dim); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
-.about-value strong { display: block; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 3px; }
-.about-value span { font-size: 13px; color: var(--grey); line-height: 1.55; }
-
-.about-stat-card { background: var(--navy-2); border: 1px solid var(--border); border-radius: var(--rl); padding: 32px; position: sticky; top: 100px; }
-.about-stat-header { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 12px; font-weight: 600; color: var(--grey); text-transform: uppercase; letter-spacing: 0.1em; }
-.as-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue-b); animation: blink 2s ease-in-out infinite; }
-.about-stats { display: flex; flex-direction: column; gap: 0; }
-.about-stat { padding: 18px 0; }
-.about-stat-divider { height: 1px; background: var(--border); }
-.as-num { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 36px; letter-spacing: -1.5px; color: var(--white); line-height: 1; margin-bottom: 5px; }
-.as-label { font-size: 13px; color: var(--grey); line-height: 1.5; }
-.about-mission-tag { display: flex; align-items: center; gap: 8px; margin-top: 24px; padding: 14px 16px; background: var(--blue-dim); border: 1px solid var(--blue-line); border-radius: var(--r); font-size: 13px; font-weight: 600; color: var(--blue-b); line-height: 1.5; }
-
-@media (max-width: 960px) { .about-inner { grid-template-columns: 1fr; } .about-stat-card { position: static; } }
-.faq { background: var(--black); }
-.faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 48px; }
-.faq-item { background: var(--navy); border: 1px solid var(--border); border-radius: var(--rl); padding: 28px; transition: border-color 0.3s; }
-.faq-item:hover { border-color: var(--blue-line); }
-.faq-q { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; }
-.faq-q::before { content: 'Q'; width: 24px; height: 24px; border-radius: 6px; background: var(--blue-dim); border: 1px solid var(--blue-line); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: var(--blue-b); flex-shrink: 0; margin-top: 1px; }
-.faq-a { font-size: 14px; color: var(--grey); line-height: 1.7; padding-left: 36px; }
-
-/* WHY BAR */
-.why-bar { background: var(--navy-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px 6%; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
-.why-bar-label { font-size: 12px; font-weight: 700; color: var(--grey-d); text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; flex-shrink: 0; }
-.why-items { display: flex; gap: 32px; flex-wrap: wrap; align-items: center; }
-.why-item { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--off-white); white-space: nowrap; }
-.why-check { width: 20px; height: 20px; border-radius: 50%; background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: var(--green); flex-shrink: 0; }
-
-/* CTA */
-.cta { background: var(--black); padding: 100px 6%; text-align: center; position: relative; overflow: hidden; border-top: 1px solid var(--border); }
-.cta::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 700px; height: 400px; background: radial-gradient(ellipse, rgba(37,99,235,0.14) 0%, transparent 70%); pointer-events: none; }
-.cta h2 { font-size: clamp(34px, 5vw, 60px); max-width: 700px; margin: 0 auto 16px; position: relative; }
-.cta p { color: var(--grey); font-size: 17px; max-width: 440px; margin: 0 auto 40px; position: relative; }
-.cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; }
-
-/* FOOTER */
-footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--border); }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; margin-bottom: 28px; }
-.footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
-.footer-links a { font-size: 13px; color: var(--grey-d); text-decoration: none; transition: color 0.2s; }
-.footer-links a:hover { color: var(--grey); }
-.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-top: 24px; border-top: 1px solid var(--border); }
-.footer-bottom p { font-size: 13px; color: var(--grey-d); }
-.social-link { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--blue-b); text-decoration: none; }
-
-@keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+/* FAQ ACCORDION */
+.faq{background:var(--navy);border-top:1px solid var(--border)}
+.faq-list{margin-top:36px;display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:var(--rl);overflow:hidden}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{width:100%;text-align:left;padding:20px 24px;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;color:var(--white);background:var(--navy-2);cursor:pointer;border:none;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:background 0.2s}
+.faq-q:hover{background:var(--navy-3)}
+.faq-q.open{background:var(--navy-3);color:var(--blue-b)}
+.faq-icon{width:20px;height:20px;border-radius:50%;background:var(--blue-dim);border:1px solid var(--blue-line);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform 0.3s;font-size:12px;color:var(--blue-b)}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 24px 20px;font-size:14px;color:var(--grey);line-height:1.75;background:var(--navy-3)}
+.faq-a.open{display:block}
 
 /* EARLY ACCESS */
-.early-access {
-  background: var(--black);
-  padding: 120px 6%;
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid var(--border);
-}
-.ea-glow-l {
-  position: absolute;
-  top: 50%; left: -150px;
-  transform: translateY(-50%);
-  width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 65%);
-  pointer-events: none;
-}
-.ea-glow-r {
-  position: absolute;
-  top: 50%; right: -150px;
-  transform: translateY(-50%);
-  width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(37,99,235,0.08) 0%, transparent 65%);
-  pointer-events: none;
-}
-.ea-inner {
-  max-width: 620px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-.ea-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: var(--blue-dim);
-  border: 1px solid var(--blue-line);
-  color: var(--blue-b);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 100px;
-  margin-bottom: 28px;
-}
-.ea-badge-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--blue-b);
-  animation: blink 2s ease-in-out infinite;
-}
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+.early-access{background:var(--black);padding:100px 6%;position:relative;overflow:hidden;border-top:1px solid var(--border)}
+.ea-glow-l{position:absolute;top:50%;left:-150px;transform:translateY(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(37,99,235,0.12) 0%,transparent 65%);pointer-events:none}
+.ea-glow-r{position:absolute;top:50%;right:-150px;transform:translateY(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%);pointer-events:none}
+.ea-inner{max-width:580px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.ea-badge{display:inline-flex;align-items:center;gap:7px;background:var(--blue-dim);border:1px solid var(--blue-line);color:var(--blue-b);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:24px}
+.ea-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--blue-b);animation:blink 2s ease-in-out infinite}
+.ea-inner h2{font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-2px;line-height:1.05;margin-bottom:14px}
+.ea-sub{font-size:16px;color:var(--grey);line-height:1.7;margin-bottom:40px}
+.ea-form{display:flex;flex-direction:column;gap:14px;text-align:left}
+.ea-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ea-field{display:flex;flex-direction:column;gap:6px}
+.ea-field label{font-size:12px;font-weight:600;color:var(--grey);letter-spacing:0.04em}
+.ea-field input{background:var(--navy);border:1px solid rgba(255,255,255,0.1);border-radius:var(--r);padding:13px 16px;font-family:'Inter',sans-serif;font-size:14px;color:var(--white);outline:none;transition:border-color 0.2s,box-shadow 0.2s;width:100%;-webkit-appearance:none}
+.ea-field input::placeholder{color:var(--grey-d)}
+.ea-field input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,0.12)}
+.ea-submit{width:100%;background:var(--blue);color:var(--white);border:none;border-radius:var(--r);padding:15px;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:background 0.2s,transform 0.15s,box-shadow 0.2s;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:4px}
+.ea-submit:hover:not(:disabled){background:var(--blue-b);transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,99,235,0.3)}
+.ea-submit:disabled{opacity:0.7;cursor:not-allowed;transform:none}
+.btn-loading{display:none;align-items:center;gap:8px}
+.ea-submit.loading .btn-text{display:none}
+.ea-submit.loading .btn-loading{display:flex}
+.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,0.3);border-top-color:white;border-radius:50%;animation:spin 0.7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ea-success{display:none;flex-direction:column;align-items:center;gap:16px;padding:48px 32px;background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.2);border-radius:var(--rl);text-align:center}
+.ea-success-icon{width:56px;height:56px;border-radius:50%;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.3);display:flex;align-items:center;justify-content:center;font-size:24px}
+.ea-success h3{font-size:20px;font-weight:700;color:var(--white)}
+.ea-success p{font-size:15px;color:var(--grey);line-height:1.6}
+.ea-note{text-align:center;font-size:12px;color:var(--grey-d);margin-top:14px}
 
-.ea-inner h2 {
-  font-size: clamp(36px, 5vw, 60px);
-  font-weight: 900;
-  letter-spacing: -2px;
-  line-height: 1.05;
-  color: var(--white);
-  margin-bottom: 16px;
-}
-.ea-inner h2 .blue { color: var(--blue-b); }
-.ea-sub {
-  font-size: 17px;
-  color: var(--grey);
-  line-height: 1.7;
-  margin-bottom: 48px;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.ea-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  text-align: left;
-}
-.ea-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-.ea-field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.ea-field label {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--grey);
-  letter-spacing: 0.04em;
-}
-.ea-field input,
-.ea-field textarea {
-  background: var(--navy);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: var(--r);
-  padding: 13px 16px;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  color: var(--white);
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  width: 100%;
-  -webkit-appearance: none;
-}
-.ea-field input::placeholder,
-.ea-field textarea::placeholder {
-  color: var(--grey-d);
-}
-.ea-field input:focus,
-.ea-field textarea:focus {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
-}
-.ea-field textarea {
-  resize: none;
-  height: 100px;
-  line-height: 1.6;
-}
-.ea-submit {
-  width: 100%;
-  background: var(--blue);
-  color: var(--white);
-  border: none;
-  border-radius: var(--r);
-  padding: 15px;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 4px;
-}
-.ea-submit:hover:not(:disabled) {
-  background: var(--blue-b);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 24px rgba(37,99,235,0.3);
-}
-.ea-submit:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
-.ea-submit .btn-text { transition: opacity 0.2s; }
-.ea-submit .btn-loading { display: none; align-items: center; gap: 8px; }
-.ea-submit.loading .btn-text { display: none; }
-.ea-submit.loading .btn-loading { display: flex; }
-.spinner {
-  width: 16px; height: 16px;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-top-color: white;
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
+/* PROOF BAR */
+.proof-bar{background:var(--navy-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 6%;display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+.proof-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--grey)}
+.proof-item svg{color:var(--blue-b);flex-shrink:0}
 
-.ea-success {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 48px 32px;
-  background: rgba(34,197,94,0.06);
-  border: 1px solid rgba(34,197,94,0.2);
-  border-radius: var(--rl);
-  text-align: center;
-}
-.ea-success-icon {
-  width: 56px; height: 56px;
-  border-radius: 50%;
-  background: rgba(34,197,94,0.12);
-  border: 1px solid rgba(34,197,94,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-}
-.ea-success h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: -0.3px;
-}
-.ea-success p { font-size: 15px; color: var(--grey); line-height: 1.6; }
-.ea-note {
-  text-align: center;
-  font-size: 12px;
-  color: var(--grey-d);
-  margin-top: 16px;
-}
+/* CTA */
+.cta{background:var(--black);padding:96px 6%;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--border)}
+.cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:400px;background:radial-gradient(ellipse,rgba(37,99,235,0.14) 0%,transparent 70%);pointer-events:none}
+.cta h2{font-size:clamp(32px,5vw,56px);max-width:640px;margin:0 auto 14px;position:relative}
+.cta p{color:var(--grey);font-size:16px;max-width:440px;margin:0 auto 36px;position:relative}
+.cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
 
-@media (max-width: 600px) {
-  .ea-row { grid-template-columns: 1fr; }
-}
+/* PRIVACY */
+#privacy{display:none;background:var(--navy);padding:80px 6%}
+.priv-inner{max-width:780px;margin:0 auto}
+.back-link{display:inline-flex;align-items:center;gap:8px;color:var(--blue-b);font-size:14px;font-weight:600;text-decoration:none;margin-bottom:40px;cursor:pointer}
+.doc-section{margin-bottom:36px}
+.doc-section h2{font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.doc-section h3{font-size:15px;font-weight:600;color:var(--off-white);margin:14px 0 6px}
+.doc-section p{font-size:14px;color:var(--grey);line-height:1.8;margin-bottom:8px}
+.doc-section ul{padding-left:20px;display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.doc-section ul li{font-size:14px;color:var(--grey);line-height:1.7}
+.doc-section a{color:var(--blue-b);text-decoration:none}
+.priv-box{background:var(--navy-2);border:1px solid var(--border);border-left:3px solid var(--blue);border-radius:0 var(--r) var(--r) 0;padding:14px 18px;margin:12px 0;font-size:13px;color:var(--off-white)}
 
-@media (max-width: 900px) {
-  .roi-inner { grid-template-columns: 1fr; }
+/* FOOTER */
+footer{background:var(--navy);padding:36px 6%;border-top:1px solid var(--border)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:24px}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:13px;color:var(--grey-d);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--grey)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:20px;border-top:1px solid var(--border)}
+.footer-bottom p{font-size:13px;color:var(--grey-d)}
+.social-link{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--blue-b);text-decoration:none}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .pro-card{grid-template-columns:1fr}
+  .pro-left{border-right:none;border-bottom:1px solid var(--border);padding:32px 24px}
+  .pro-right{padding:32px 24px}
+  .feat-panel.active{grid-template-columns:1fr}
 }
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .hero { flex-direction: column; padding: 110px 6% 60px; }
-  .hero h1 { letter-spacing: -1.5px; }
-  .steps::before { display: none; }
-  .pcard.featured { transform: scale(1); }
-  .hero-stats { gap: 24px; }
-  .footer-inner, .footer-bottom { flex-direction: column; text-align: center; }
+@media(max-width:768px){
+  nav{padding:16px 5%}
+  .nav-links{display:none}
+  .hero{flex-direction:column;padding:110px 5% 60px}
+  .hero h1{letter-spacing:-1.5px}
+  .steps::before{display:none}
+  .hero-stats{gap:24px}
+  .footer-inner,.footer-bottom{flex-direction:column;text-align:center}
+  .proof-bar{gap:20px}
+  .ea-row{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -688,16 +271,13 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 <nav>
   <a href="#" class="logo">
     <div class="logo-icon">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M27.6 6.4a1 1 0 0 0-1.4 0l-4.6 4.6-2.6-.6-.6-2.6 4.6-4.6a1 1 0 0 0-.3-1.6A9 9 0 0 0 11.1 13L4.3 19.8a4.5 4.5 0 0 0 6.4 6.4L17.5 19a9 9 0 0 0 10.8-11.2 1 1 0 0 0-.7-.4z" fill="#2563EB"/>
-      </svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
     </div>
     <span class="logo-text">wrenchly</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#features">Features</a></li>
+    <li><a href="#problem">The Problem</a></li>
     <li><a href="#how">How it works</a></li>
-    <li><a href="#about">About</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="https://calendly.com/trywrenchly/30min" target="_blank" class="nav-btn">Book a Demo</a></li>
@@ -707,22 +287,16 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      AI for Field Service Businesses
-    </div>
+    <div class="hero-badge"><span class="badge-dot"></span>Built for Plumbers & Electricians</div>
     <h1>Never Miss a<br><span class="blue">Job Again.</span></h1>
-    <p class="hero-sub">Wrenchly answers calls, books jobs, follows up with customers, and helps plumbers and electricians convert more leads — automatically.</p>
-    <p class="hero-mission">We believe the trades are the backbone of every community. Wrenchly exists to give trade businesses the same operational edge that enterprise companies have — without the enterprise price tag.</p>
+    <p class="hero-sub">Wrenchly answers calls, books jobs, and follows up with customers automatically — 24 hours a day, 7 days a week.</p>
+    <p class="hero-mission">We believe the trades are the backbone of every community. Wrenchly exists to give plumbers and electricians the same operational edge that enterprise companies have — without the enterprise price tag.</p>
     <div class="hero-actions">
       <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue">
         Book a Demo
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
-      <a href="#demo" class="btn-outline">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6 4l6 4-6 4V4z"/></svg>
-        Watch How It Works
-      </a>
+      <a href="#early-access" class="btn-outline">Apply for Early Access</a>
     </div>
     <div class="hero-stats">
       <div><div class="stat-num">94%</div><div class="stat-label">Calls answered 24/7</div></div>
@@ -730,110 +304,80 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
       <div><div class="stat-num">48 hrs</div><div class="stat-label">To go fully live</div></div>
     </div>
   </div>
-
   <div class="hero-right">
     <div class="phone-mockup">
-      <div class="phone-header">
-        <div class="phone-avatar">🔧</div>
-        <div>
-          <div class="phone-title">Wrenchly AI</div>
-          <div class="phone-sub">● Active now</div>
-        </div>
+      <div class="pw-header">
+        <div class="pw-avatar">🔧</div>
+        <div><div class="pw-name">Wrenchly AI</div><div class="pw-status">● Active now</div></div>
       </div>
-      <div class="call-ring">
-        <div class="call-ring-icon">📞</div>
-        <div class="call-info">
-          <strong>Incoming call — John M.</strong>
-          <span>Burst pipe · Emergency</span>
-        </div>
-        <span class="call-badge">Answered</span>
+      <div class="pw-call">
+        <div class="pw-call-icon">📞</div>
+        <div class="pw-call-info"><strong>Incoming — John M.</strong><span>Burst pipe · Urgent</span></div>
+        <span class="pw-badge">Answered</span>
       </div>
       <div class="bubbles">
-        <div class="chat-bubble bubble-ai">Hi, thanks for calling! I can get a plumber to you today. What's the issue?</div>
-        <div class="chat-bubble bubble-user">Pipe burst in the basement, need someone ASAP</div>
-        <div class="chat-bubble bubble-ai">Got it — I have a slot at 2:30pm today. Can I book that for you?</div>
+        <div class="chat-bubble bubble-ai">Hi! I can get a plumber to you today at 2:30pm — shall I book that?</div>
+        <div class="chat-bubble bubble-user">Yes please, it's urgent</div>
       </div>
-      <div class="booking-confirm">
-        <div class="confirm-header">
-          <div class="confirm-check">✓</div>
-          <div class="confirm-title">Job Booked!</div>
-        </div>
-        <div class="confirm-detail">John M. · Burst pipe · Today 2:30pm<br>SMS confirmation sent ✓</div>
+      <div class="pw-booked">
+        <div class="pw-check">✓</div>
+        <div><strong>Job Booked!</strong><span>2:30pm · SMS confirmation sent ✓</span></div>
       </div>
-      <div class="cal-slot">
-        <div class="cal-dot"></div>
-        <div class="cal-text">📅 Calendar updated · 2:30pm slot filled</div>
+      <div class="pw-cal">
+        <div class="pw-cal-dot"></div>
+        <div class="pw-cal-text">📅 Calendar updated · 2:30pm slot filled</div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    Live in 48 hours
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    Done-for-you setup
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    No contracts
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    Canadian built
+  </div>
+  <div class="proof-item">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    Built for plumbers & electricians
+  </div>
+</div>
 
 <!-- PROBLEM -->
 <section class="problem" id="problem">
   <p class="label">The problem</p>
-  <h2>Most Field Service Businesses<br>Are Losing Money Every Day</h2>
+  <h2>Most field service businesses are<br>losing money <span class="blue">every day</span></h2>
   <div class="prob-list">
     <div class="prob-item">
       <div class="prob-x">✕</div>
-      <div>
-        <strong>Missed calls turn into lost jobs</strong>
-        <span>Every unanswered call is a customer who called your competitor next.</span>
-      </div>
+      <div><strong>Missed calls turn into lost jobs</strong><span>Every unanswered call is a customer who called your competitor next.</span></div>
     </div>
     <div class="prob-item">
       <div class="prob-x">✕</div>
-      <div>
-        <strong>Slow follow-up loses customers to competitors</strong>
-        <span>Speed wins. If you don't respond in minutes, someone else gets the job.</span>
-      </div>
+      <div><strong>Slow follow-up loses customers</strong><span>Speed wins. If you don't respond in minutes, someone else gets the job.</span></div>
     </div>
     <div class="prob-item">
       <div class="prob-x">✕</div>
-      <div>
-        <strong>Office staff can't keep up with demand</strong>
-        <span>One person can't answer calls, schedule jobs, and follow up — all at once.</span>
-      </div>
+      <div><strong>After-hours calls go straight to voicemail</strong><span>Emergencies don't happen 9–5. Your competitors who answer will take that job.</span></div>
     </div>
     <div class="prob-item">
       <div class="prob-x">✕</div>
-      <div>
-        <strong>Leads go cold within minutes</strong>
-        <span>A customer who doesn't hear back in 5 minutes has already moved on.</span>
-      </div>
-    </div>
-    <div class="prob-item">
-      <div class="prob-x">✕</div>
-      <div>
-        <strong>After-hours calls go straight to voicemail</strong>
-        <span>Emergencies don't happen 9–5. Your competitors who answer will take that job.</span>
-      </div>
+      <div><strong>Hours wasted on admin every day</strong><span>Scheduling, follow-up, reviews — all manual, all eating into your time on the tools.</span></div>
     </div>
   </div>
-  <div class="problem-closing">Every missed call is potential revenue walking away.</div>
-</section>
-
-<!-- SOLUTION -->
-<section class="solution" id="solution">
-  <p class="label">The solution</p>
-  <h2>Meet Wrenchly —<br>Your <span class="blue">AI Operations Assistant</span></h2>
-  <p class="sub">Wrenchly works like a digital office manager that never sleeps.</p>
-  <div class="solution-grid">
-    <div class="sol-card">
-      <div class="sol-num">01</div>
-      <h3>Answers every customer instantly</h3>
-      <p>No more missed calls, no more voicemails. Every inbound call or form gets a real-time AI response, 24/7.</p>
-    </div>
-    <div class="sol-card">
-      <div class="sol-num">02</div>
-      <h3>Books jobs automatically</h3>
-      <p>Wrenchly qualifies the lead, checks your availability, and books the appointment — without you lifting a finger.</p>
-    </div>
-    <div class="sol-card">
-      <div class="sol-num">03</div>
-      <h3>Follows up until the job is scheduled</h3>
-      <p>Automated follow-up sequences keep leads warm and bring back customers who didn't book on the first contact.</p>
-    </div>
-  </div>
+  <div class="prob-closing">Every missed call is potential revenue walking away.</div>
 </section>
 
 <!-- HOW IT WORKS -->
@@ -854,8 +398,8 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
     </div>
     <div class="step">
       <div class="step-num">3</div>
-      <h3>Job booked into your calendar</h3>
-      <p>Based on your live availability, Wrenchly books the appointment and updates your schedule automatically.</p>
+      <h3>Job booked automatically</h3>
+      <p>Wrenchly checks your availability and books the appointment directly into your calendar.</p>
     </div>
     <div class="step">
       <div class="step-num">4</div>
@@ -865,167 +409,103 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
   </div>
 </section>
 
-<!-- FEATURES -->
+<!-- FEATURES TABS -->
 <section class="features" id="features">
-  <p class="label">Core features</p>
-  <h2>Everything your business<br>needs to <span class="blue">run itself</span></h2>
-  <div class="feat-grid">
+  <p class="label">What's included</p>
+  <h2>Everything in <span class="blue">Wrenchly Pro</span></h2>
+  <p class="sub">One plan. All features. Done for you.</p>
+  <div class="feat-tabs">
+    <button class="feat-tab active" onclick="switchFeat('calls',this)">📞 Calls & Leads</button>
+    <button class="feat-tab" onclick="switchFeat('booking',this)">🗓️ Booking</button>
+    <button class="feat-tab" onclick="switchFeat('followup',this)">🔁 Follow-Up</button>
+    <button class="feat-tab" onclick="switchFeat('reporting',this)">📊 Reporting</button>
+  </div>
+  <div class="feat-panel active" id="feat-calls">
     <div class="feat-card">
       <div class="feat-icon">📞</div>
       <h3>AI Receptionist</h3>
-      <p>Answers calls 24/7, collects job details, qualifies leads, and books appointments — even when you're on the tools.</p>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🗓️</div>
-      <h3>Smart Scheduling</h3>
-      <p>Books appointments automatically based on your real-time availability. No double-bookings, no back-and-forth.</p>
+      <p>Answers every call 24/7, qualifies the lead, collects job details, and books the appointment — even at 2am.</p>
     </div>
     <div class="feat-card">
       <div class="feat-icon">📲</div>
-      <h3>Missed Call Recovery</h3>
-      <p>If a call slips through, Wrenchly instantly sends an automated text back to recover the lead before they move on.</p>
+      <h3>Missed Call Text Back</h3>
+      <p>Instantly texts any caller you miss — recovers leads within 60 seconds before they call someone else.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🎯</div>
+      <h3>Lead Qualification</h3>
+      <p>AI screens every inbound lead so you focus only on the jobs that fit your business.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🌐</div>
+      <h3>Website Chat Widget</h3>
+      <p>AI chatbot on your website captures enquiries, answers questions, and pushes qualified leads to your calendar.</p>
+    </div>
+  </div>
+  <div class="feat-panel" id="feat-booking">
+    <div class="feat-card">
+      <div class="feat-icon">🗓️</div>
+      <h3>Smart Scheduling</h3>
+      <p>Books appointments directly into your calendar based on your real-time availability. No double-bookings.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">💬</div>
+      <h3>SMS Confirmations</h3>
+      <p>Instant confirmation sent to the customer the moment a job is booked. Professional, automatic, reliable.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔔</div>
+      <h3>Appointment Reminders</h3>
+      <p>Automated reminders sent before every job — dramatically reduces no-shows and last-minute cancellations.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔧</div>
+      <h3>Done-For-You Setup</h3>
+      <p>We connect and configure everything — calendar sync, AI scripts, booking flows — in under 48 hours.</p>
+    </div>
+  </div>
+  <div class="feat-panel" id="feat-followup">
+    <div class="feat-card">
+      <div class="feat-icon">🔁</div>
+      <h3>Automated Follow-Up</h3>
+      <p>Timed follow-up sequences keep leads warm until they book. No lead left behind, no revenue left on the table.</p>
     </div>
     <div class="feat-card">
       <div class="feat-icon">⭐</div>
-      <h3>Review Automation</h3>
-      <p>After every completed job, Wrenchly automatically requests a Google review — building your reputation on autopilot.</p>
+      <h3>Review Requests</h3>
+      <p>Automatically asks for a Google review after every completed job — builds your reputation on autopilot.</p>
     </div>
     <div class="feat-card">
-      <div class="feat-icon">🔁</div>
-      <h3>Customer Follow-Up</h3>
-      <p>Keeps leads warm with timed follow-up sequences until they book. No lead left behind, no revenue left on the table.</p>
+      <div class="feat-icon">📩</div>
+      <h3>No-Show Recovery</h3>
+      <p>If a customer misses an appointment, Wrenchly automatically follows up to reschedule the job.</p>
     </div>
+    <div class="feat-card">
+      <div class="feat-icon">🤝</div>
+      <h3>CRM Integration</h3>
+      <p>Every call, lead, and booking is logged automatically. Your CRM stays current without manual data entry.</p>
+    </div>
+  </div>
+  <div class="feat-panel" id="feat-reporting">
     <div class="feat-card">
       <div class="feat-icon">📊</div>
       <h3>Business Dashboard</h3>
-      <p>One clear view of leads, bookings, revenue, and reviews. Know exactly what's working at a glance.</p>
+      <p>One clear view of leads, bookings, revenue, and reviews in real time — on any device.</p>
     </div>
-  </div>
-</section>
-
-<!-- DEMO -->
-<section class="demo" id="demo">
-  <p class="label">See it in action</p>
-  <h2>See Wrenchly <span class="blue">in Action</span></h2>
-  <p class="sub" style="margin:14px auto 0;text-align:center;">Watch how a call comes in, gets answered by AI, books the appointment, and fires an SMS confirmation — in under 60 seconds.</p>
-  <div class="video-placeholder">
-    <div class="play-btn">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+    <div class="feat-card">
+      <div class="feat-icon">📈</div>
+      <h3>Revenue Tracking</h3>
+      <p>See exactly how much revenue Wrenchly is generating for your business every month.</p>
     </div>
-    <div class="video-label">Wrenchly Demo — 60 seconds</div>
-    <div class="video-sub">Incoming call → AI answers → Job booked → SMS sent → CRM updated</div>
-  </div>
-</section>
-
-<!-- ROI -->
-<section class="roi" id="roi">
-  <p class="label">Return on investment</p>
-  <h2>One Missed Job Pays for<br>This <span class="blue">Entire System</span></h2>
-  <p class="sub">The math is simple. The average trade job is worth far more than the monthly cost of Wrenchly.</p>
-  <div class="roi-inner">
-    <div class="roi-box">
-      <div class="roi-row">
-        <span>Average job value</span>
-        <strong>$300 – $1,500+</strong>
-      </div>
-      <div class="roi-row">
-        <span>Jobs recovered per month</span>
-        <strong>5–10 jobs</strong>
-      </div>
-      <div class="roi-row">
-        <span>Extra revenue per month</span>
-        <strong class="roi-highlight">$1,500 – $7,500+</strong>
-      </div>
-      <div class="roi-row">
-        <span>Wrenchly monthly cost</span>
-        <strong>$297/mo</strong>
-      </div>
+    <div class="feat-card">
+      <div class="feat-icon">📋</div>
+      <h3>Call Summaries</h3>
+      <p>Every AI-handled call is summarised and sent to you — job details, customer info, and what was booked.</p>
     </div>
-    <div>
-      <div class="roi-statement">If Wrenchly helps you book even 2–3 extra jobs per month, it pays for itself — and everything else is pure profit.</div>
-      <div style="margin-top:28px;display:flex;flex-direction:column;gap:12px;">
-        <a href="#cta" class="btn-blue">Start recovering jobs today
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </a>
-        <p style="font-size:13px;color:var(--grey);">No long contracts. Cancel any time.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="about-inner">
-    <div class="about-left">
-      <p class="label">About Wrenchly</p>
-      <h2>Built for the trades.<br><span class="blue">By people who get it.</span></h2>
-      <p class="sub">Wrenchly was built on a simple observation — the trades keep the world running, but trade businesses are still operating like it's 2005. Missed calls. Paper schedules. No follow-up. Revenue walking out the door every single day.</p>
-      <p class="about-body">We built Wrenchly to change that. Not with complicated software that takes months to learn — but with a done-for-you AI system that plugs into your existing workflow and starts working in 48 hours.</p>
-      <p class="about-body">Our mission is straightforward: give every plumber and electrician in Canada access to the same automated operations that enterprise businesses have had for years — at a price that makes sense for a trade business.</p>
-      <p class="about-body">We're not a software company that stumbled into the trades. We're a team obsessed with one niche, one problem, and one solution. Every feature in Wrenchly exists because a tradesperson needed it.</p>
-      <div class="about-values">
-        <div class="about-value">
-          <div class="av-icon">🔧</div>
-          <div>
-            <strong>Trade-first</strong>
-            <span>Built exclusively for field service businesses. Not adapted from generic software.</span>
-          </div>
-        </div>
-        <div class="about-value">
-          <div class="av-icon">⚡</div>
-          <div>
-            <strong>Done for you</strong>
-            <span>We set everything up. You don't touch the tech. You just start getting more calls answered.</span>
-          </div>
-        </div>
-        <div class="about-value">
-          <div class="av-icon">🇨🇦</div>
-          <div>
-            <strong>Canadian built</strong>
-            <span>Based in Toronto, Ontario. Built for the Canadian trades market first.</span>
-          </div>
-        </div>
-        <div class="about-value">
-          <div class="av-icon">📈</div>
-          <div>
-            <strong>Results first</strong>
-            <span>If you don't see results in 30 days, we'll refund your first month. No questions.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="about-right">
-      <div class="about-stat-card">
-        <div class="about-stat-header">
-          <div class="as-dot"></div>
-          <span>Why we built this</span>
-        </div>
-        <div class="about-stats">
-          <div class="about-stat">
-            <div class="as-num">7</div>
-            <div class="as-label">Average calls missed per week by a trades business</div>
-          </div>
-          <div class="about-stat-divider"></div>
-          <div class="about-stat">
-            <div class="as-num">$500</div>
-            <div class="as-label">Average value of a single missed job</div>
-          </div>
-          <div class="about-stat-divider"></div>
-          <div class="about-stat">
-            <div class="as-num">5 min</div>
-            <div class="as-label">How quickly a lead goes cold without a response</div>
-          </div>
-          <div class="about-stat-divider"></div>
-          <div class="about-stat">
-            <div class="as-num">18,600+</div>
-            <div class="as-label">Trade businesses in Ontario currently losing jobs this way</div>
-          </div>
-        </div>
-        <div class="about-mission-tag">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Wrenchly exists to fix every single one of these.
-        </div>
-      </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔍</div>
+      <h3>Lead Source Tracking</h3>
+      <p>Know exactly where your best leads are coming from — phone, web, or referral.</p>
     </div>
   </div>
 </section>
@@ -1033,200 +513,112 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 <!-- PRICING -->
 <section class="pricing" id="pricing">
   <p class="label">Simple Pricing</p>
-  <h2>One offer.<br><span class="blue">Everything included.</span></h2>
-  <p class="sub">No tiers. No confusing packages. One flat monthly rate — everything your trades business needs to run on autopilot.</p>
-
-  <div class="pro-card-wrap">
-    <div class="pro-card">
-      <div class="pro-card-left">
-        <div class="tier">Wrenchly Pro</div>
-        <div class="pro-price-row">
-          <div class="founder-price">$297</div>
-          <div class="pro-period">/ month</div>
-        </div>
-        <p class="pro-desc">Everything your plumbing or electrical business needs to capture more leads, respond faster, and book more jobs — automatically. Done-for-you setup included.</p>
-        <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue" style="width:fit-content;margin-top:8px;">
-          Book a Free Demo
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </a>
-        <p style="font-size:12px;color:var(--grey-d);margin-top:12px;">No contracts · Cancel any time · 30-day notice · Setup done for you</p>
+  <h2>One offer. <span class="blue">Everything included.</span></h2>
+  <p class="sub">No tiers. No confusing packages. One flat monthly rate — everything your trades business needs.</p>
+  <div class="pro-card">
+    <div class="pro-left">
+      <div class="tier">Wrenchly Pro</div>
+      <div class="pro-price">$297</div>
+      <div class="pro-period">/ month · no contracts · cancel any time</div>
+      <div class="roi-callout">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <p>The average job is worth <strong>$500–$1,500</strong>. If Wrenchly books you even one extra job per month, it pays for itself. Most clients break even in week one.</p>
       </div>
-      <div class="pro-card-right">
-        <div class="pro-features-title">What's included</div>
-        <ul class="pro-features">
-          <li>
-            <div class="pro-feat-icon">📞</div>
-            <div>
-              <strong>AI Receptionist</strong>
-              <span>Answers every call 24/7, qualifies the lead, and books the job automatically</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">📲</div>
-            <div>
-              <strong>Missed Call Text Back</strong>
-              <span>Instantly texts any caller you miss — recovers leads before they call someone else</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">🎯</div>
-            <div>
-              <strong>Lead Qualification</strong>
-              <span>AI screens and scores every inbound lead so you focus on the jobs that matter</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">🗓️</div>
-            <div>
-              <strong>Smart Scheduling</strong>
-              <span>Books appointments directly into your calendar with confirmations and reminders</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">🔁</div>
-            <div>
-              <strong>Automated Follow-Up</strong>
-              <span>Keeps leads warm with timed sequences until they book — no lead left behind</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">⭐</div>
-            <div>
-              <strong>Review Requests</strong>
-              <span>Automatically asks for a Google review after every completed job</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">📊</div>
-            <div>
-              <strong>Business Dashboard</strong>
-              <span>One clear view of leads, bookings, revenue, and reviews in real time</span>
-            </div>
-          </li>
-          <li>
-            <div class="pro-feat-icon">🔧</div>
-            <div>
-              <strong>Done-For-You Setup</strong>
-              <span>We build and configure everything — you're live within 48 hours, no tech skills needed</span>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <p class="pro-desc">Everything your plumbing or electrical business needs to capture more leads, respond faster, and book more jobs — automatically.</p>
+      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue" style="width:fit-content">
+        Book a Free Demo
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+      <p style="font-size:12px;color:var(--grey-d);margin-top:12px">No contracts · Cancel any time · 30-day notice · Setup done for you</p>
+    </div>
+    <div class="pro-right">
+      <div class="pro-features-title">What's included</div>
+      <ul class="pro-features">
+        <li><div class="pro-feat-icon">📞</div><div><strong>AI Receptionist</strong><span>Answers every call 24/7, qualifies leads, books jobs automatically</span></div></li>
+        <li><div class="pro-feat-icon">📲</div><div><strong>Missed Call Text Back</strong><span>Instantly texts missed callers — recovers leads in under 60 seconds</span></div></li>
+        <li><div class="pro-feat-icon">🎯</div><div><strong>Lead Qualification</strong><span>AI screens every lead so you focus on the jobs that matter</span></div></li>
+        <li><div class="pro-feat-icon">🗓️</div><div><strong>Smart Scheduling</strong><span>Books directly into your calendar with confirmations and reminders</span></div></li>
+        <li><div class="pro-feat-icon">🔁</div><div><strong>Automated Follow-Up</strong><span>Keeps leads warm with timed sequences until they book</span></div></li>
+        <li><div class="pro-feat-icon">⭐</div><div><strong>Review Requests</strong><span>Automatically asks for Google reviews after every job</span></div></li>
+        <li><div class="pro-feat-icon">📊</div><div><strong>Business Dashboard</strong><span>Real-time view of leads, bookings, revenue and reviews</span></div></li>
+        <li><div class="pro-feat-icon">🔧</div><div><strong>Done-For-You Setup</strong><span>We build and configure everything — live in 48 hours</span></div></li>
+      </ul>
     </div>
   </div>
-  <p class="pricing-note">No contracts · No hidden fees · Cancel any time with 30 days' notice · Setup done for you within 48 hours</p>
+  <p class="pricing-note">No hidden fees · No contracts · Cancel with 30 days' notice · Setup included</p>
 </section>
 
 <!-- FAQ -->
 <section class="faq" id="faq">
   <p class="label">FAQ</p>
-  <h2>Common questions,<br><span class="blue">straight answers</span></h2>
-  <div class="faq-grid">
+  <h2>Common questions, <span class="blue">straight answers</span></h2>
+  <div class="faq-list">
     <div class="faq-item">
-      <div class="faq-q">Do I need to replace my current system?</div>
-      <div class="faq-a">No — Wrenchly works alongside your existing phone and workflow. There's nothing to rip out or replace.</div>
+      <button class="faq-q" onclick="toggleFaq(this)">Do I need to replace my current system? <span class="faq-icon">+</span></button>
+      <div class="faq-a">No — Wrenchly works alongside your existing phone and workflow. There's nothing to rip out or replace. We plug in on top of what you already have.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Is this hard to set up?</div>
-      <div class="faq-a">Not at all. Setup is done for you in under a day. You don't need any technical knowledge — we handle everything.</div>
+      <button class="faq-q" onclick="toggleFaq(this)">Is this hard to set up? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Not at all. Setup is done for you in under 48 hours. You don't need any technical knowledge — we handle everything from configuration to testing.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Does this replace my staff?</div>
-      <div class="faq-a">No. Wrenchly supports your team and handles the overflow — missed calls, after-hours enquiries, and follow-ups — so your staff can focus on higher-value work.</div>
+      <button class="faq-q" onclick="toggleFaq(this)">Does this replace my staff? <span class="faq-icon">+</span></button>
+      <div class="faq-a">No. Wrenchly handles the overflow — missed calls, after-hours enquiries, and follow-ups — so your team can focus on higher-value work. It supports your operation, it doesn't replace it.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Can I cancel any time?</div>
-      <div class="faq-a">Yes — all plans are month-to-month. No lock-in contracts, no cancellation fees. Cancel with 30 days notice any time.</div>
+      <button class="faq-q" onclick="toggleFaq(this)">Can I cancel any time? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Yes — all plans are month-to-month. No lock-in contracts, no cancellation penalties. Cancel with 30 days' written notice any time.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">What trades does Wrenchly work for?</div>
-      <div class="faq-a">Wrenchly is built specifically for plumbers and electricians. If your phone rings for jobs and you're losing leads to missed calls or slow follow-up, Wrenchly is built for you.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How quickly will I see results?</div>
+      <button class="faq-q" onclick="toggleFaq(this)">How quickly will I see results? <span class="faq-icon">+</span></button>
       <div class="faq-a">Most clients see their first AI-booked jobs within the first 48 hours of going live. The system is built to show impact fast.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What trades does Wrenchly work for? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Wrenchly is built specifically for plumbers and electricians. If your phone rings for jobs and you're losing leads to missed calls or slow follow-up, Wrenchly is built for you.</div>
     </div>
   </div>
 </section>
-
-<!-- PROOF BAR -->
-<div class="why-bar">
-  <div class="why-bar-label">Why plumbers &amp; electricians choose Wrenchly</div>
-  <div class="why-items">
-    <div class="why-item">
-      <div class="why-check">✓</div>
-      <span>Live in 48 hours</span>
-    </div>
-    <div class="why-item">
-      <div class="why-check">✓</div>
-      <span>Done-for-you setup</span>
-    </div>
-    <div class="why-item">
-      <div class="why-check">✓</div>
-      <span>No contracts</span>
-    </div>
-    <div class="why-item">
-      <div class="why-check">✓</div>
-      <span>Canadian built</span>
-    </div>
-    <div class="why-item">
-      <div class="why-check">✓</div>
-      <span>Built specifically for plumbers &amp; electricians</span>
-    </div>
-  </div>
-</div>
 
 <!-- EARLY ACCESS -->
 <section class="early-access" id="early-access">
   <div class="ea-glow-l"></div>
   <div class="ea-glow-r"></div>
   <div class="ea-inner">
-    <div class="ea-badge"><span class="ea-badge-dot"></span> Limited Early Access</div>
+    <div class="ea-badge"><span class="ea-badge-dot"></span>Limited Early Access</div>
     <h2>Your office should<br><span class="blue">run itself.</span></h2>
     <p class="ea-sub">Join the early access list for Wrenchly — the modern operating system for trades businesses. We're onboarding a limited number of businesses first.</p>
-
     <div id="ea-form-wrap">
       <form class="ea-form" id="ea-form">
         <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE">
         <input type="hidden" name="subject" value="New Wrenchly Early Access Application">
         <input type="hidden" name="from_name" value="Wrenchly Early Access">
-        <input type="checkbox" name="botcheck" style="display:none;">
-
+        <input type="checkbox" name="botcheck" style="display:none">
         <div class="ea-row">
           <div class="ea-field">
-            <label for="ea-name">Full name</label>
-            <input type="text" id="ea-name" name="name" placeholder="Mike Reeves" required>
+            <label>Full name</label>
+            <input type="text" name="name" placeholder="Mike Reeves" required>
           </div>
           <div class="ea-field">
-            <label for="ea-company">Company name</label>
-            <input type="text" id="ea-company" name="company" placeholder="Reeves Plumbing" required>
+            <label>Company name</label>
+            <input type="text" name="company" placeholder="Reeves Plumbing" required>
           </div>
         </div>
-
         <div class="ea-field">
-          <label for="ea-email">Email address</label>
-          <input type="email" id="ea-email" name="email" placeholder="mike@reevesplumbing.com" required>
+          <label>Email address</label>
+          <input type="email" name="email" placeholder="mike@reevesplumbing.com" required>
         </div>
-
         <div class="ea-field">
-          <label for="ea-phone">Phone number</label>
-          <input type="tel" id="ea-phone" name="phone" placeholder="416-555-0101" required>
+          <label>Phone number</label>
+          <input type="tel" name="phone" placeholder="416-555-0101" required>
         </div>
-
         <button type="submit" class="ea-submit" id="ea-submit">
-          <span class="btn-text">
-            Apply for Early Access
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </span>
-          <span class="btn-loading">
-            <span class="spinner"></span>
-            Submitting...
-          </span>
+          <span class="btn-text">Apply for Early Access <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+          <span class="btn-loading"><span class="spinner"></span>Submitting...</span>
         </button>
       </form>
       <p class="ea-note">No credit card required. We'll reach out within 24 hours.</p>
     </div>
-
     <div class="ea-success" id="ea-success">
       <div class="ea-success-icon">✓</div>
       <h3>You're on the list.</h3>
@@ -1237,8 +629,8 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
 
 <!-- CTA -->
 <section class="cta" id="cta">
-  <p class="label" style="display:flex;justify-content:center;">Ready to grow?</p>
-  <h2>Stop Missing Jobs.<br><span class="blue">Start Running on Autopilot.</span></h2>
+  <p class="label" style="display:flex;justify-content:center">Ready to grow?</p>
+  <h2>Stop missing jobs.<br><span class="blue">Start running on autopilot.</span></h2>
   <p>Book a free 30-minute demo. We'll show you exactly how Wrenchly works for your business — no pressure, no jargon.</p>
   <div class="cta-actions">
     <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue">
@@ -1249,180 +641,48 @@ footer { background: var(--navy); padding: 40px 6%; border-top: 1px solid var(--
   </div>
 </section>
 
-<script>
-document.getElementById('ea-form').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const btn = document.getElementById('ea-submit');
-  const form = document.getElementById('ea-form');
-  const successEl = document.getElementById('ea-success');
-  const formWrap = document.getElementById('ea-form-wrap');
-
-  btn.classList.add('loading');
-  btn.disabled = true;
-
-  const formData = new FormData(form);
-  const object = {};
-  formData.forEach((v, k) => object[k] = v);
-  const json = JSON.stringify(object);
-
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: json
-    });
-    const data = await res.json();
-    if (data.success) {
-      form.style.display = 'none';
-      document.querySelector('.ea-note').style.display = 'none';
-      successEl.style.display = 'flex';
-      successEl.style.animation = 'fadeUp 0.5s ease both';
-    } else {
-      throw new Error('Submission failed');
-    }
-  } catch (err) {
-    btn.classList.remove('loading');
-    btn.disabled = false;
-    btn.querySelector('.btn-text').innerHTML = 'Something went wrong — try again <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>';
-  }
-});
-</script>
-
-<!-- PRIVACY POLICY (hidden section, shown via anchor) -->
-<section id="privacy" style="display:none;background:var(--navy);padding:80px 6%;">
-  <div style="max-width:780px;margin:0 auto;">
-    <a href="#" onclick="document.getElementById('privacy').style.display='none';window.scrollTo(0,0);return false;" style="display:inline-flex;align-items:center;gap:8px;color:var(--blue-b);font-size:14px;font-weight:600;text-decoration:none;margin-bottom:40px;">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+<!-- PRIVACY POLICY -->
+<section id="privacy">
+  <div class="priv-inner">
+    <a class="back-link" onclick="document.getElementById('privacy').style.display='none';window.scrollTo(0,0)">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
       Back to site
     </a>
-    <p style="font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-b);margin-bottom:12px;">Legal</p>
-    <h2 style="font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-1px;margin-bottom:8px;">Privacy Policy</h2>
-    <p style="font-size:14px;color:var(--grey);margin-bottom:48px;">Last updated: May 2025</p>
-
-    <div style="display:flex;flex-direction:column;gap:36px;font-size:15px;line-height:1.8;color:var(--grey);">
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">1. Who We Are</h3>
-        <p>Wrenchly ("we", "us", or "our") is a sole proprietorship registered in Ontario, Canada, operating under the trade name Wrenchly and accessible at trywrenchly.com. We provide AI-powered automation services for field service businesses including plumbers, electricians, and HVAC companies.</p>
-        <p style="margin-top:12px;">For privacy-related inquiries, contact us at:<br>
-        <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a><br>
-        2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2, Canada</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">2. Scope &amp; Applicable Law</h3>
-        <p>This Privacy Policy governs how Wrenchly collects, uses, discloses, and protects personal information in accordance with Canada's <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and, where applicable, Ontario's privacy legislation. By using our website or services, you consent to the practices described in this policy.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">3. Information We Collect</h3>
-        <p>We may collect the following categories of personal information:</p>
-        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
-          <li><strong style="color:var(--white);">Identity &amp; contact information</strong> — full name, business name, email address, phone number</li>
-          <li><strong style="color:var(--white);">Business information</strong> — trade type, service area, number of employees, current tools and systems in use</li>
-          <li><strong style="color:var(--white);">Payment information</strong> — billing details processed securely through third-party payment processors; we do not store full card numbers</li>
-          <li><strong style="color:var(--white);">Communication records</strong> — emails, demo call notes, and support interactions</li>
-          <li><strong style="color:var(--white);">Usage data</strong> — pages visited, time on site, browser type, IP address, and referral source collected via standard web analytics</li>
-          <li><strong style="color:var(--white);">End-customer data</strong> — when providing our service, we may process personal information belonging to your customers (names, phone numbers, booking details) on your behalf as a data processor</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">4. How We Collect Information</h3>
-        <p>We collect personal information through:</p>
-        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
-          <li>Demo booking forms and contact forms on this website</li>
-          <li>Direct communication by email, phone, or video call</li>
-          <li>Onboarding and account setup processes</li>
-          <li>Third-party tools including scheduling platforms (e.g. Calendly), CRM systems (e.g. GoHighLevel), and payment processors</li>
-          <li>Automatically via cookies and standard web analytics when you visit trywrenchly.com</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">5. How We Use Your Information</h3>
-        <p>We use collected information to:</p>
-        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
-          <li>Respond to demo requests and enquiries</li>
-          <li>Deliver and manage our AI automation services</li>
-          <li>Process payments and issue invoices</li>
-          <li>Send service-related communications including booking confirmations and account updates</li>
-          <li>Send marketing communications (email and/or SMS) where you have provided express or implied consent under Canada's Anti-Spam Legislation (CASL)</li>
-          <li>Improve our website and services through anonymised analytics</li>
-          <li>Comply with applicable legal obligations</li>
-        </ul>
-        <p style="margin-top:12px;">We do not sell, rent, or trade your personal information to third parties for their own marketing purposes.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">6. Marketing Communications (CASL)</h3>
-        <p>We comply with Canada's Anti-Spam Legislation (CASL). We will only send commercial electronic messages (email or SMS) where we have your express or implied consent. Every marketing message will include a clear and easy way to unsubscribe. You may withdraw consent at any time by clicking "unsubscribe" in any email or replying STOP to any SMS, or by contacting us directly at <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a>.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">7. Sharing Your Information</h3>
-        <p>We may share personal information with trusted third-party service providers who assist us in operating our business, including:</p>
-        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
-          <li>Scheduling and CRM platforms (e.g. Calendly, GoHighLevel)</li>
-          <li>Payment processors (e.g. Stripe)</li>
-          <li>AI voice and communication platforms used to deliver our service</li>
-          <li>Email and SMS communication providers</li>
-          <li>Website hosting and analytics providers</li>
-        </ul>
-        <p style="margin-top:12px;">All third-party providers are required to handle your information securely and only for the purposes we specify. Some providers may be located outside Canada, including in the United States. By using our services, you acknowledge that your information may be transferred to and processed in other jurisdictions, where local laws may differ from those in Canada.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">8. Data Retention</h3>
-        <p>We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, or as required by law. Client records are generally retained for a minimum of 7 years for tax and accounting purposes. You may request deletion of your data at any time subject to these legal retention requirements.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">9. Your Rights Under PIPEDA</h3>
-        <p>You have the right to:</p>
-        <ul style="margin-top:12px;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
-          <li>Request access to the personal information we hold about you</li>
-          <li>Request correction of inaccurate or incomplete information</li>
-          <li>Withdraw consent for non-essential data uses at any time</li>
-          <li>Request deletion of your personal information, subject to legal obligations</li>
-          <li>File a complaint with the Office of the Privacy Commissioner of Canada (OPC) at <a href="https://www.priv.gc.ca" target="_blank" style="color:var(--blue-b);text-decoration:none;">priv.gc.ca</a></li>
-        </ul>
-        <p style="margin-top:12px;">To exercise any of these rights, contact us at <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a>. We will respond within 30 days.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">10. Cookies &amp; Tracking</h3>
-        <p>Our website uses cookies and similar tracking technologies to understand how visitors use the site and to improve user experience. These include essential cookies required for the site to function and analytics cookies that collect anonymised usage data. You may disable cookies through your browser settings, though this may affect certain functionality.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">11. Security</h3>
-        <p>We implement reasonable technical and organisational measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. However, no method of transmission over the internet is 100% secure. We encourage you to contact us immediately if you suspect any unauthorised use of your information.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">12. Children's Privacy</h3>
-        <p>Our services are intended for business owners and are not directed at individuals under the age of 18. We do not knowingly collect personal information from minors.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">13. Changes to This Policy</h3>
-        <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of our website or services after any changes constitutes your acceptance of the updated policy.</p>
-      </div>
-
-      <div>
-        <h3 style="font-size:17px;font-weight:700;color:var(--white);margin-bottom:12px;">14. Contact Us</h3>
-        <p>For any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact:</p>
-        <div style="margin-top:16px;padding:20px 24px;background:var(--navy-2);border:1px solid var(--border);border-radius:var(--r);line-height:2;">
-          <strong style="color:var(--white);">Wrenchly</strong><br>
-          2 Bloor Street West, Suite 700<br>
-          Toronto, Ontario, M4W 3E2, Canada<br>
-          <a href="mailto:hello@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">hello@trywrenchly.com</a><br>
-          <a href="mailto:privacy@trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">privacy@trywrenchly.com</a> (privacy requests)<br>
-          <a href="https://trywrenchly.com" style="color:var(--blue-b);text-decoration:none;">trywrenchly.com</a>
-        </div>
-      </div>
-
+    <p class="label">Legal</p>
+    <h2 style="margin-bottom:8px">Privacy Policy</h2>
+    <p style="font-size:14px;color:var(--grey);margin-bottom:48px">Last updated: June 2026</p>
+    <div class="doc-section">
+      <h2>1. Who We Are</h2>
+      <p>Wrenchly is a sole proprietorship registered in Ontario, Canada, operating at 2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2. For privacy inquiries: <a href="mailto:privacy@trywrenchly.com">privacy@trywrenchly.com</a></p>
+    </div>
+    <div class="doc-section">
+      <h2>2. Information We Collect</h2>
+      <p>We collect name, email, phone, business information, payment details (processed by Stripe), usage data, and end-customer data processed on your behalf when delivering the Services.</p>
+    </div>
+    <div class="doc-section">
+      <h2>3. How We Use Your Information</h2>
+      <p>To deliver and manage our Services, process payments, send service communications, send marketing messages where you have provided consent under CASL, and improve our platform through anonymised analytics. We do not sell your data.</p>
+    </div>
+    <div class="doc-section">
+      <h2>4. Marketing Communications (CASL)</h2>
+      <p>We comply with Canada's Anti-Spam Legislation. You may withdraw consent at any time by clicking unsubscribe in any email or replying STOP to any SMS, or by emailing <a href="mailto:privacy@trywrenchly.com">privacy@trywrenchly.com</a>.</p>
+    </div>
+    <div class="doc-section">
+      <h2>5. Sharing Your Information</h2>
+      <p>We share data only with trusted service providers including Calendly, GoHighLevel, Stripe, and AI calling platforms. Some providers may be located outside Canada. By using our services, you acknowledge this.</p>
+    </div>
+    <div class="doc-section">
+      <h2>6. Your Rights Under PIPEDA</h2>
+      <p>You have the right to access, correct, or request deletion of your data. To exercise these rights contact <a href="mailto:privacy@trywrenchly.com">privacy@trywrenchly.com</a>. You may also file a complaint with the Office of the Privacy Commissioner at <a href="https://www.priv.gc.ca" target="_blank">priv.gc.ca</a>.</p>
+    </div>
+    <div class="doc-section">
+      <h2>7. Data Retention & Security</h2>
+      <p>We retain data for as long as necessary to provide the Services or as required by law. We implement reasonable security measures to protect your information. Upon cancellation, data is retained for 30 days then permanently deleted.</p>
+    </div>
+    <div class="doc-section">
+      <h2>8. Contact</h2>
+      <p>Wrenchly · 2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2<br>
+      <a href="mailto:hello@trywrenchly.com">hello@trywrenchly.com</a> · <a href="mailto:privacy@trywrenchly.com">privacy@trywrenchly.com</a></p>
     </div>
   </div>
 </section>
@@ -1432,36 +692,71 @@ document.getElementById('ea-form').addEventListener('submit', async function(e) 
   <div class="footer-inner">
     <a href="https://trywrenchly.com" class="logo">
       <div class="logo-icon">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M27.6 6.4a1 1 0 0 0-1.4 0l-4.6 4.6-2.6-.6-.6-2.6 4.6-4.6a1 1 0 0 0-.3-1.6A9 9 0 0 0 11.1 13L4.3 19.8a4.5 4.5 0 0 0 6.4 6.4L17.5 19a9 9 0 0 0 10.8-11.2 1 1 0 0 0-.7-.4z" fill="#2563EB"/>
-        </svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
       </div>
       <span class="logo-text">wrenchly</span>
     </a>
     <div class="footer-links">
-      <a href="#features">Features</a>
+      <a href="#problem">The Problem</a>
       <a href="#how">How it works</a>
-      <a href="#about">About</a>
       <a href="#pricing">Pricing</a>
-      <a href="/terms.html">Terms & Conditions</a>
-      <a href="#privacy" onclick="document.getElementById('privacy').style.display='block';window.scrollTo(0,document.getElementById('privacy').offsetTop);return false;">Privacy Policy</a>
       <a href="#faq">FAQ</a>
-      <a href="https://trywrenchly.com">trywrenchly.com</a>
+      <a href="/terms.html">Terms & Conditions</a>
+      <a href="#privacy" onclick="document.getElementById('privacy').style.display='block';window.scrollTo(0,document.getElementById('privacy').offsetTop)">Privacy Policy</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Wrenchly. Built for the trades. Powered by AI.</p>
+    <p>© 2026 Wrenchly. Built for the trades. Powered by AI.</p>
     <a href="https://instagram.com/trywrenchly" class="social-link" target="_blank">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
       @trywrenchly
     </a>
-    <p style="color:var(--grey-d);font-size:13px;">
-      <a href="mailto:hello@trywrenchly.com" style="color:var(--grey-d);text-decoration:none;">hello@trywrenchly.com</a>
-      &nbsp;·&nbsp;
-      2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2, Canada
+    <p style="color:var(--grey-d);font-size:13px">
+      <a href="mailto:hello@trywrenchly.com" style="color:var(--grey-d);text-decoration:none">hello@trywrenchly.com</a>
+      &nbsp;·&nbsp;2 Bloor Street West, Suite 700, Toronto, Ontario, M4W 3E2
     </p>
   </div>
 </footer>
 
+<script>
+// Feature tabs
+function switchFeat(id, btn) {
+  document.querySelectorAll('.feat-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.feat-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('feat-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = btn.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(q => { q.classList.remove('open'); q.nextElementSibling.classList.remove('open'); });
+  if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
+}
+
+// Early Access form
+document.getElementById('ea-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('ea-submit');
+  btn.classList.add('loading'); btn.disabled = true;
+  const data = Object.fromEntries(new FormData(this));
+  try {
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    const json = await res.json();
+    if (json.success) {
+      document.getElementById('ea-form-wrap').style.display = 'none';
+      document.getElementById('ea-success').style.display = 'flex';
+    } else throw new Error();
+  } catch {
+    btn.classList.remove('loading'); btn.disabled = false;
+    btn.querySelector('.btn-text').textContent = 'Something went wrong — try again';
+  }
+});
+</script>
 </body>
 </html>
