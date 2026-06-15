@@ -208,6 +208,13 @@ h2{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-1.5px;line-hei
 .ea-success p{font-size:15px;color:var(--grey);line-height:1.6}
 .ea-note{text-align:center;font-size:12px;color:var(--grey-d);margin-top:14px}
 
+/* CTA */
+.cta{background:var(--black);padding:96px 6%;text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--border)}
+.cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:700px;height:400px;background:radial-gradient(ellipse,rgba(37,99,235,0.14) 0%,transparent 70%);pointer-events:none}
+.cta h2{font-size:clamp(32px,5vw,56px);max-width:640px;margin:0 auto 14px;position:relative}
+.cta p{color:var(--grey);font-size:16px;max-width:440px;margin:0 auto 36px;position:relative}
+.cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
+
 /* PROOF BAR */
 .proof-bar{background:var(--navy-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 6%;display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
 .proof-item{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--grey)}
@@ -279,7 +286,7 @@ footer{background:var(--navy);padding:36px 6%;border-top:1px solid var(--border)
   <ul class="nav-links">
     <li><a href="#problem">The Problem</a></li>
     <li><a href="#how">How it works</a></li>
-    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#early-access" class="nav-btn">Book a Demo</a></li>
   </ul>
@@ -509,42 +516,17 @@ footer{background:var(--navy);padding:36px 6%;border-top:1px solid var(--border)
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <p class="label">Simple Pricing</p>
-  <h2>One offer. <span class="blue">Everything included.</span></h2>
-  <p class="sub">No tiers. No confusing packages. One flat monthly rate — everything plumbers and electricians need to run on autopilot.</p>
-  <div class="pro-card">
-    <div class="pro-left">
-      <div class="tier">Wrenchly Pro</div>
-      <div class="pro-price">$297</div>
-      <div class="pro-period">/ month · no contracts · cancel any time</div>
-      <div class="roi-callout">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <p>The average job is worth <strong>$500–$1,500</strong>. If Wrenchly books you even one extra job per month, it pays for itself. Most clients break even in week one.</p>
-      </div>
-      <p class="pro-desc">Everything your plumbing or electrical business needs to capture more leads, respond faster, and book more jobs — automatically.</p>
-      <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue" style="width:fit-content">
-        Book a Free Demo
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-      </a>
-      <p style="font-size:12px;color:var(--grey-d);margin-top:12px">No contracts · Cancel any time · 30-day notice · Setup done for you</p>
-    </div>
-    <div class="pro-right">
-      <div class="pro-features-title">What's included</div>
-      <ul class="pro-features">
-        <li><div class="pro-feat-icon">📞</div><div><strong>AI Receptionist</strong><span>Answers every call 24/7, qualifies leads, books jobs automatically</span></div></li>
-        <li><div class="pro-feat-icon">📲</div><div><strong>Missed Call Text Back</strong><span>Instantly texts missed callers — recovers leads in under 60 seconds</span></div></li>
-        <li><div class="pro-feat-icon">🎯</div><div><strong>Lead Qualification</strong><span>AI screens every lead so you focus on the jobs that matter</span></div></li>
-        <li><div class="pro-feat-icon">🗓️</div><div><strong>Smart Scheduling</strong><span>Books directly into your calendar with confirmations and reminders</span></div></li>
-        <li><div class="pro-feat-icon">🔁</div><div><strong>Automated Follow-Up</strong><span>Keeps leads warm with timed sequences until they book</span></div></li>
-        <li><div class="pro-feat-icon">⭐</div><div><strong>Review Requests</strong><span>Automatically asks for Google reviews after every job</span></div></li>
-        <li><div class="pro-feat-icon">📊</div><div><strong>Business Dashboard</strong><span>Real-time view of leads, bookings, revenue and reviews</span></div></li>
-        <li><div class="pro-feat-icon">🔧</div><div><strong>Done-For-You Setup</strong><span>We build and configure everything — live in 48 hours</span></div></li>
-      </ul>
-    </div>
+<!-- CTA -->
+<section class="cta" id="pricing">
+  <p class="label" style="display:flex;justify-content:center">Ready to grow?</p>
+  <h2>Stop missing jobs.<br><span class="blue">Start running on autopilot.</span></h2>
+  <p>Book a free 30-minute demo. We'll show you exactly how Wrenchly works for your business — no pressure, no jargon.</p>
+  <div class="cta-actions">
+    <a href="https://calendly.com/trywrenchly/30min" target="_blank" class="btn-blue">
+      Book a Demo
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
   </div>
-  <p class="pricing-note">No hidden fees · No contracts · Cancel with 30 days' notice · Setup included</p>
 </section>
 
 <!-- FAQ -->
@@ -685,7 +667,7 @@ footer{background:var(--navy);padding:36px 6%;border-top:1px solid var(--border)
     <div class="footer-links">
       <a href="#problem">The Problem</a>
       <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#features">Features</a>
       <a href="#faq">FAQ</a>
       <a href="/terms.html">Terms & Conditions</a>
       <a href="#privacy" onclick="document.getElementById('privacy').style.display='block';window.scrollTo(0,document.getElementById('privacy').offsetTop)">Privacy Policy</a>
